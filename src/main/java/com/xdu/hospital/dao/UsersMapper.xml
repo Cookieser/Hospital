@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xdu.hospital.dao.UsersMapper">
+
+    <select id="queryUserByEmail" resultType="com.xdu.hospital.pojo.User">
+    select * from user where user_email=#{uEmail}
+    </select>
+
+    <select id="selectIdByEmail" resultType="com.xdu.hospital.pojo.User">
+        select user_id from user where user_email=#{uEmail}
+    </select>
+
+    <select id="queryUsers" resultType="com.xdu.hospital.pojo.User">
+        select * from user
+    </select>
+
+    <insert id="registerUser" parameterType="com.xdu.hospital.pojo.User" statementType="PREPARED" keyProperty="user_id">
+        insert into user(user_email,user_password,user_token) values (#{uEmail},#{uPassword},'a')
+    </insert>
+
+    <update id="updateUser" parameterType="com.xdu.hospital.pojo.User">
+        update user set user_token=concat(user_email,'?id=',cast(user_id AS char)) where user_email=#{uEmail}
+    </update>
+
+</mapper>
