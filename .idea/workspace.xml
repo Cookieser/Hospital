@@ -77,7 +77,39 @@
       <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RareUseDaoTest.testDelWork">
+  <component name="RunManager" selected="JUnit.AccommodationTest.testFindAllWork">
+    <configuration name="AccommodationTest.testAddWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.software.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.AccommodationTest" />
+      <option name="METHOD_NAME" value="testAddWork" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccommodationTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.software.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.AccommodationTest" />
+      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AnswerTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
@@ -90,37 +122,6 @@
       <option name="MAIN_CLASS_NAME" value="com.software.dao.AnswerTest" />
       <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnswerTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.AnswerTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuestionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.QuestionTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -229,20 +230,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
-      <item itemvalue="JUnit.QuestionTest" />
-      <item itemvalue="JUnit.AnswerTest.testFindAllWork" />
       <item itemvalue="JUnit.AnswerTest.testDelete" />
       <item itemvalue="JUnit.RareUseDaoTest.testFindAllWork" />
       <item itemvalue="JUnit.RareUseDaoTest.testDelWork" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
+      <item itemvalue="JUnit.AccommodationTest.testAddWork" />
+      <item itemvalue="JUnit.AccommodationTest.testFindAllWork" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccommodationTest.testFindAllWork" />
+        <item itemvalue="JUnit.AccommodationTest.testAddWork" />
         <item itemvalue="JUnit.RareUseDaoTest.testDelWork" />
         <item itemvalue="JUnit.RareUseDaoTest.testFindAllWork" />
         <item itemvalue="JUnit.AnswerTest.testDelete" />
-        <item itemvalue="JUnit.AnswerTest.testFindAllWork" />
-        <item itemvalue="JUnit.QuestionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -317,26 +318,26 @@
     </state>
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257436076" />
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654484671486" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1654508287780">
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom" timestamp="1654508617331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654508287780" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1654508287772">
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
+    <state width="1493" height="304" key="GridCell.Tab.0.center" timestamp="1654508617331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654508287772" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1654508287772">
+    <state width="1493" height="304" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
+    <state width="1493" height="304" key="GridCell.Tab.0.left" timestamp="1654508617331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654508287772" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1654508287772">
+    <state width="1493" height="304" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
+    <state width="1493" height="304" key="GridCell.Tab.0.right" timestamp="1654508617331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654508287772" />
+    <state width="1493" height="304" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1654257540483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -378,11 +379,11 @@
     </state>
     <state x="290" y="178" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257439170" />
     <state x="290" y="178" width="1038" height="526" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1654484674357" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1654253633564">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1654508507417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654253633564" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1654224051499" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1654508507417" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
