@@ -8,20 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df42e12e-51aa-4eb0-82b8-7717ea6a22a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/software/view/Draw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/software/view/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/software/view/Scan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/software/view/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/AnswerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/BedTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/DoctorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/QuestionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/RoomTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/AnswerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/BedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/DoctorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/QuestionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/RoomTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,22 +62,22 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\32442\Downloads\hospital_server-master\test\com\software\dao" />
-      <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\dao" />
-      <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\Stage1\javaweb\lib" />
+      <recent name="D:\Code\Stage1\javaweb\src\com\software\utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.software.entity" />
       <recent name="com.software.dao" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Code\Stage1\javaweb\lib" />
-      <recent name="D:\Code\Stage1\javaweb\src\com\software\utils" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\32442\Downloads\hospital_server-master\test\com\software\dao" />
+      <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\dao" />
+      <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DoctorDaoTest.testFindAllWrk">
-    <configuration name="AnswerTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AnswerTest.testAdd">
+    <configuration name="AnswerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +87,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
       <option name="MAIN_CLASS_NAME" value="com.software.dao.AnswerTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BedDaoTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnswerTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +101,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.BedDaoTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.AnswerTest" />
+      <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoctorDaoTest.testUpdateWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionTest.UpdateWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -148,14 +133,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.DoctorDaoTest" />
-      <option name="METHOD_NAME" value="testUpdateWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.QuestionTest" />
+      <option name="METHOD_NAME" value="UpdateWork" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoomDaoTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionTest.testAddWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -164,8 +149,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.RoomDaoTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.QuestionTest" />
+      <option name="METHOD_NAME" value="testAddWork" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -243,20 +228,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
-      <item itemvalue="JUnit.DoctorDaoTest.testUpdateWork" />
-      <item itemvalue="JUnit.BedDaoTest.testFindAllWork" />
-      <item itemvalue="JUnit.AnswerTest.testFindAllWork" />
       <item itemvalue="JUnit.DoctorDaoTest.testFindAllWrk" />
-      <item itemvalue="JUnit.RoomDaoTest.testFindAllWork" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
+      <item itemvalue="JUnit.QuestionTest.testAddWork" />
+      <item itemvalue="JUnit.AnswerTest.testAdd" />
+      <item itemvalue="JUnit.QuestionTest.UpdateWork" />
+      <item itemvalue="JUnit.AnswerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnswerTest.testAdd" />
+        <item itemvalue="JUnit.AnswerTest" />
+        <item itemvalue="JUnit.QuestionTest.UpdateWork" />
+        <item itemvalue="JUnit.QuestionTest.testAddWork" />
         <item itemvalue="JUnit.DoctorDaoTest.testFindAllWrk" />
-        <item itemvalue="JUnit.RoomDaoTest.testFindAllWork" />
-        <item itemvalue="JUnit.BedDaoTest.testFindAllWork" />
-        <item itemvalue="JUnit.AnswerTest.testFindAllWork" />
-        <item itemvalue="JUnit.DoctorDaoTest.testUpdateWork" />
       </list>
     </recent_temporary>
   </component>
@@ -302,6 +287,7 @@
       <workItem from="1654484652956" duration="22000" />
       <workItem from="1654502447877" duration="520000" />
       <workItem from="1654504116885" duration="1585000" />
+      <workItem from="1654506599213" duration="771000" />
     </task>
     <servers />
   </component>
@@ -321,31 +307,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="360" y="71" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1653960436719" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654507256846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1654507256846" />
     <state x="570" y="168" key="FileChooserDialogImpl" timestamp="1654484671486">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257436076" />
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654484671486" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1654505717723">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1654507157259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654505717723" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1654505717723">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654507157259" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1654507157258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654505717723" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1654505717723">
+    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654507157258" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1654507157257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654505717723" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1654505717723">
+    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654507157257" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1654507157258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654505717723" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654507157258" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1654257540483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
