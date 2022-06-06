@@ -1,7 +1,5 @@
-package software.view;
+package com.software.view;
 
-
-import java.util.Scanner;
 
 public class HelloWorld {
 

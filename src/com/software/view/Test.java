@@ -1,4 +1,4 @@
-package software.view;
+package com.software.view;
 
 
 public class Test {

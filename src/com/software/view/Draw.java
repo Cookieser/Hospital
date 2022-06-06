@@ -1,4 +1,4 @@
-package software.view;
+package com.software.view;
 
 public class Draw {
     public static void main(String[] args) {
