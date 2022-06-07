@@ -15,6 +15,25 @@ public class Doctor {
     private String delMark;
     private String remarks;
 
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "principal=" + principal +
+                ", doctorNum=" + doctorNum +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", year='" + year + '\'' +
+                ", Account='" + Account + '\'' +
+                ", passWord='" + passWord + '\'' +
+                ", gender='" + gender + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", Title='" + Title + '\'' +
+                ", department='" + department + '\'' +
+                ", delMark='" + delMark + '\'' +
+                ", remarks='" + remarks + '\'' +
+                '}';
+    }
+
     public Integer getPrincipal() {
         return principal;
     }

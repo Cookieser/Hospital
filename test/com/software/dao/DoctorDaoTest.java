@@ -86,7 +86,7 @@ public class DoctorDaoTest {
     public void testFindAllWrk() {
 
 
-        List<Doctor> doctors = doctorDao.findWork();
+        List<Doctor> doctors = doctorDao.findAllWork();
         for (Doctor doctor : doctors) {
             System.out.println(doctor.getPrincipal() + "," +
                     doctor.getDoctorNum() + "," + doctor.getName() + "," + doctor.getAge() + ","
@@ -96,6 +96,32 @@ public class DoctorDaoTest {
                     + doctor.getDelMark() + "," + doctor.getRemarks());
         }
 
+    }
+
+    @Test
+    public void testFindWorkByID(){
+        //调用数据库访问层中的方法
+        Doctor work = doctorDao.findWorkById(2);
+        System.out.println(work);
+    }
+
+    /**
+     * 测试用例：用户登陆信息的合法性
+     */
+    @Test
+    public void testValidateUser(){
+        Doctor doctor=
+                doctorDao.validateLogin("qihao");
+        if(doctor ==null){
+            System.out.println("此账户不存在！");
+        }else{
+            //验证用户登陆密码是否正确
+            if("240250".equals(doctor.getPassWord())){
+                System.out.println("合法用户");
+            }else{
+                System.out.println("输入密码错误");
+            }
+        }
     }
 }
 

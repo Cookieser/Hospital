@@ -8,34 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="df42e12e-51aa-4eb0-82b8-7717ea6a22a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/AccommodationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/AccommodationDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/AnswerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/AnswerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/DBHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/RareManageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/RareManageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/RareUseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/RareUseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/model/RareManageEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/model/RareUseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/AccommodationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/AccommodationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/AnswerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/AnswerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/BedDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/BedDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/DoctorDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/DoctorDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/PatientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/PatientTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/QuestionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/QuestionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/RareManageDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/RareManageDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/RareUseDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/RareUseDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/RoomDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/RoomDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/dao/AccommodationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/AccommodationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/dao/AnswerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/AnswerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/dao/DBHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/dao/RareManageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/RareManageDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/dao/RareUseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/RareUseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/dao/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/RoomDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/entity/RareManageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/entity/RareManageEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/entity/RareUseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/entity/RareUseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/AccommodationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/AccommodationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/AnswerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/AnswerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/RareManageDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/RareManageDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/RareUseDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/RareUseDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/dao/DoctorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/DoctorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/dao/PatientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/PatientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/entity/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/software/dao/DoctorDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/DoctorDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/software/dao/PatientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/PatientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/software/dao/RoomDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/RoomDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +97,8 @@
       <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoomDaoTest.testFindAllWork">
-    <configuration name="QuestionTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DoctorDaoTest.testValidateUser">
+    <configuration name="DoctorDaoTest.testFindWorkByAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -128,14 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.QuestionTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.DoctorDaoTest" />
+      <option name="METHOD_NAME" value="testFindWorkByAccount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RareManageDaoTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DoctorDaoTest.testFindWorkByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -144,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.RareManageDaoTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.DoctorDaoTest" />
+      <option name="METHOD_NAME" value="testFindWorkByID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RareUseDaoTest.testDelWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DoctorDaoTest.testValidateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -160,14 +139,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.RareUseDaoTest" />
-      <option name="METHOD_NAME" value="testDelWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.DoctorDaoTest" />
+      <option name="METHOD_NAME" value="testValidateUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RareUseDaoTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PatientTest.testFindWorkById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -176,14 +155,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.RareUseDaoTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.PatientTest" />
+      <option name="METHOD_NAME" value="testFindWorkById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoomDaoTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PatientTest.testValidateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -192,8 +171,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.RoomDaoTest" />
-      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.PatientTest" />
+      <option name="METHOD_NAME" value="testValidateUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,19 +251,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
-      <item itemvalue="JUnit.QuestionTest.testFindAllWork" />
-      <item itemvalue="JUnit.RareManageDaoTest.testFindAllWork" />
-      <item itemvalue="JUnit.RareUseDaoTest.testFindAllWork" />
-      <item itemvalue="JUnit.RareUseDaoTest.testDelWork" />
-      <item itemvalue="JUnit.RoomDaoTest.testFindAllWork" />
+      <item itemvalue="JUnit.DoctorDaoTest.testFindWorkByAccount" />
+      <item itemvalue="JUnit.DoctorDaoTest.testValidateUser" />
+      <item itemvalue="JUnit.PatientTest.testFindWorkById" />
+      <item itemvalue="JUnit.DoctorDaoTest.testFindWorkByID" />
+      <item itemvalue="JUnit.PatientTest.testValidateUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RoomDaoTest.testFindAllWork" />
-        <item itemvalue="JUnit.RareUseDaoTest.testFindAllWork" />
-        <item itemvalue="JUnit.RareUseDaoTest.testDelWork" />
-        <item itemvalue="JUnit.RareManageDaoTest.testFindAllWork" />
-        <item itemvalue="JUnit.QuestionTest.testFindAllWork" />
+        <item itemvalue="JUnit.DoctorDaoTest.testValidateUser" />
+        <item itemvalue="JUnit.PatientTest.testValidateUser" />
+        <item itemvalue="JUnit.DoctorDaoTest.testFindWorkByID" />
+        <item itemvalue="JUnit.PatientTest.testFindWorkById" />
+        <item itemvalue="JUnit.DoctorDaoTest.testFindWorkByAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +311,8 @@
       <workItem from="1654504116885" duration="1585000" />
       <workItem from="1654506599213" duration="1673000" />
       <workItem from="1654508508361" duration="176000" />
-      <workItem from="1654562435899" duration="4904000" />
+      <workItem from="1654562435899" duration="5632000" />
+      <workItem from="1654582609325" duration="2367000" />
     </task>
     <servers />
   </component>
@@ -344,10 +324,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1653960483175" />
-    <state x="520" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1654567939724">
+    <state x="520" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1654583959202">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="520" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1654567939724" />
+    <state x="520" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1654583959202" />
     <state x="360" y="71" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1653960436719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -361,26 +341,26 @@
     </state>
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257436076" />
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654484671486" />
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom" timestamp="1654568501807">
+    <state width="1493" height="206" key="GridCell.Tab.0.bottom" timestamp="1654585081631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654568501807" />
-    <state width="1493" height="206" key="GridCell.Tab.0.center" timestamp="1654568501807">
+    <state width="1493" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654585081631" />
+    <state width="1493" height="206" key="GridCell.Tab.0.center" timestamp="1654585081631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654568501807" />
-    <state width="1493" height="206" key="GridCell.Tab.0.left" timestamp="1654568501806">
+    <state width="1493" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654585081631" />
+    <state width="1493" height="206" key="GridCell.Tab.0.left" timestamp="1654585081631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654568501806" />
-    <state width="1493" height="206" key="GridCell.Tab.0.right" timestamp="1654568501807">
+    <state width="1493" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654585081631" />
+    <state width="1493" height="206" key="GridCell.Tab.0.right" timestamp="1654585081631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654568501807" />
+    <state width="1493" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654585081631" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1654257540483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -422,11 +402,11 @@
     </state>
     <state x="290" y="178" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257439170" />
     <state x="290" y="178" width="1038" height="526" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1654484674357" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1654562457161">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1654582608718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654253633564" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1654562457161" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1654582608718" />
     <state x="418" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1654565103515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

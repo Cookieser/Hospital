@@ -1,5 +1,6 @@
 package com.software.dao;
 
+import com.software.entity.Doctor;
 import com.software.entity.Patient;
 import com.software.utils.DBUtils;
 
@@ -77,6 +78,86 @@ public class PatientDao {
             DBUtils.closeAll(rs,st,connection);
         }
         return patients;
+    }
+
+    public Patient findPatientByID(Integer id){
+        Patient patient = new Patient();
+
+        Connection connection = null;
+        Statement st = null;
+        ResultSet rs = null;
+        try {
+            connection = DBUtils.getConnection();
+            //1.3 创建Statement对象
+            st =connection.createStatement();
+            //1.4定义要执行操作的SQL语句
+            String sql="SELECT `User_ID`,`patient_name`,`gender`,`principal`,`load_time`,`Idcard`,`home_address`,`phone`,`Account`,`Password`,`Delmark`,`remarks` FROM `patient` WHERE `User_ID`='"+id+"' and `Delmark`=1";
+            rs = st.executeQuery(sql);
+            if(rs.next()){
+                Integer userId=rs.getInt("User_ID");
+                String name= rs.getString("patient_name");
+                String gender =rs.getString("gender");
+                Integer principal =rs.getInt("principal");
+                String load_time =rs.getString("load_time");
+                String idCard =rs.getString("Idcard");
+                String address =rs.getString("home_address");
+                String phone =rs.getString("phone");
+                String account =rs.getString("Account");
+
+
+
+                patient.setUserId(userId);
+                patient.setPatientName(name);
+                patient.setGender(gender);
+                patient.setPrincipal(principal);
+                patient.setLoadTime(load_time);
+                patient.setIdCard(idCard);
+                patient.setPhone(phone);
+                patient.setHomeAddress(address);
+                patient.setAccount(account);
+
+
+            }
+
+        } catch(Exception e){
+            e.printStackTrace();
+        } finally {
+            DBUtils.closeAll(rs,st,connection);
+        }
+        return patient;
+    }
+
+    public Patient validateLogin(String loginAccount) {
+        Patient patient = null;
+        Connection connection = null;
+        Statement st = null;
+        ResultSet rs = null;
+        try {
+            connection = DBUtils.getConnection();
+            //1.3 创建Statement对象
+            st = connection.createStatement();
+            //1.4定义要执行操作的SQL语句
+            String sql = "select Account,password from `patient`\n" +
+                    " where Account='" + loginAccount + "' and  Delmark='1'";
+            rs = st.executeQuery(sql);
+
+            if (rs.next()) {
+                patient = new Patient();
+                String acc = rs.getString("Account");
+                String pwd = rs.getString("password");
+
+
+                patient.setAccount(acc);
+                patient.setPassword(pwd);
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBUtils.closeAll(rs, st, connection);
+        }
+        return patient;
     }
 
 }

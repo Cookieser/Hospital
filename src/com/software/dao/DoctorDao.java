@@ -55,7 +55,7 @@ public class DoctorDao{
         return count;
     }
 
-    public List<Doctor> findWork(){
+    public List<Doctor> findAllWork(){
         List<Doctor> works = new ArrayList<Doctor>();
 
         Connection connection = null;
@@ -111,6 +111,89 @@ public class DoctorDao{
         }
         return works;
     }
+    public Doctor findWorkById(Integer principal){
+        Doctor doctor = new Doctor();
 
+        Connection connection = null;
+        Statement st = null;
+        ResultSet rs = null;
+        try {
+            connection = DBUtils.getConnection();
+            //1.3 创建Statement对象
+            st =connection.createStatement();
+            //1.4定义要执行操作的SQL语句
+            String sql="select doctor_num,name ,age,work_year,Account,\n" +
+                    "   password,gender,birthday,Title,department,Delmark,remarks from doctor_chart " +
+                    "where principal="+principal+" and Delmark = '1'";
+            rs = st.executeQuery(sql);
+
+            if(rs.next()){
+
+                Integer doctor_num= rs.getInt("doctor_num");
+                String name =rs.getString("name");
+                Integer age =rs.getInt("age");
+                String work_year =rs.getString("work_year");
+                String Account = rs.getString("Account");
+                String password = rs.getString("password");
+                String gender =rs.getString("gender");
+                String birthday =rs.getString("birthday");
+                String Title = rs.getString("Title");
+                String department = rs.getString("department");
+                String Delmark = rs.getString("Delmark");
+                String remarks = rs.getString("remarks");
+                doctor.setPrincipal(principal);
+                doctor.setDoctorNum(doctor_num);
+                doctor.setName(name);
+                doctor.setAge(age);
+                doctor.setYear(work_year);
+                doctor.setAccount(Account);
+                doctor.setPassWord(password);
+                doctor.setGender(gender);
+                doctor.setBirthday(birthday);
+                doctor.setTitle(Title);
+                doctor.setDepartment(department);
+                doctor.setDelMark(Delmark);
+                doctor.setRemarks(remarks);
+            }
+
+        } catch(Exception e){
+            e.printStackTrace();
+        } finally {
+            DBUtils.closeAll(rs,st,connection);
+        }
+        return doctor;
+    }
+    public Doctor validateLogin(String loginAccount) {
+        Doctor work = null;
+        Connection connection = null;
+        Statement st = null;
+        ResultSet rs = null;
+        try {
+            connection = DBUtils.getConnection();
+            //1.3 创建Statement对象
+            st = connection.createStatement();
+            //1.4定义要执行操作的SQL语句
+            String sql = "select Account,password from doctor_chart\n" +
+                    " where Account='" + loginAccount + "' and  Delmark='1'";
+            rs = st.executeQuery(sql);
+
+            if (rs.next()) {
+                work = new Doctor();
+                String acc = rs.getString("Account");
+                String pwd = rs.getString("password");
+
+
+                work.setAccount(acc);
+                work.setPassWord(pwd);
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBUtils.closeAll(rs, st, connection);
+        }
+        return work;
+    }
 }
 

@@ -1,5 +1,6 @@
 package com.software.dao;
 
+import com.software.entity.Doctor;
 import com.software.entity.Patient;
 import org.junit.Test;
 
@@ -68,7 +69,29 @@ public class PatientTest {
 
 
         }
+    }
+        @Test
+        public void testFindWorkById(){
+            //调用数据库访问层中的方法
+            Patient patient =patientDao.findPatientByID(2);
+            System.out.println(patient);
+        }
 
+    @Test
+    public void testValidateUser(){
+        Patient patient=
+                patientDao.validateLogin("xiaohao");
+        if(patient ==null){
+            System.out.println("此账户不存在！");
+        }else{
+            //验证用户登陆密码是否正确
+            if("946284".equals(patient.getPassword())){
+                System.out.println("合法用户");
+            }else{
+                System.out.println("输入密码错误");
+            }
+        }
+    }
 
     }
-}
+

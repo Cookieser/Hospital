@@ -16,6 +16,23 @@ public class Patient {
     private Integer delMark;
     private String remarks;
 
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "userId=" + userId +
+                ", patientName='" + patientName + '\'' +
+                ", gender='" + gender + '\'' +
+                ", principal=" + principal +
+                ", loadTime='" + loadTime + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", homeAddress='" + homeAddress + '\'' +
+                ", phone='" + phone + '\'' +
+                ", Account='" + Account + '\'' +
+                ", password='" + password + '\'' +
+                ", delMark=" + delMark +
+                ", remarks='" + remarks + '\'' +
+                '}';
+    }
 
     public String getGender() {
         return gender;
