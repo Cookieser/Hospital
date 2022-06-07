@@ -6,6 +6,11 @@ import org.junit.Test;
 
 import java.util.List;
 
+/**
+ * @author 李欣然
+ *
+ * */
+
 public class BedDaoTest {
     BedDao bedDao=new BedDao();
     @Test

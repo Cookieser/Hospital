@@ -5,6 +5,11 @@ import org.junit.Test;
 
 import java.util.List;
 
+
+/**
+ * @author 陈泓达
+ *
+ * */
 public class QuestionTest {
 
     QuestionDao Questiondao = new QuestionDao();

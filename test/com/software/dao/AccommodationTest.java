@@ -11,13 +11,18 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
 
+/**
+ * @author 齐豪
+ *
+ * */
+
 public class AccommodationTest {
     AccommodationDao accommodationDao = new AccommodationDao();
 
     @Test
     public void testAddWork(){
         Accommodation accommodation = new Accommodation();
-        accommodation.setID(10);
+        accommodation.setID(12);
         accommodation.setStartTime("2020/2/2");
         accommodation.setEndTime("2021/2/2");
         accommodation.setBedId(5);

@@ -12,6 +12,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
 
+/**
+ * @author 吴思天
+ *
+ * */
+
 public class RareUseDaoTest {
     RareUseDao rareUseDao = new RareUseDao();
     @Test

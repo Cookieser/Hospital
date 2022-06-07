@@ -5,6 +5,11 @@ import org.junit.Test;
 
 import java.util.List;
 
+/**
+ * @author 王渝普
+ *
+ * */
+
 public class PatientTest {
 
     PatientDao patientDao = new PatientDao();

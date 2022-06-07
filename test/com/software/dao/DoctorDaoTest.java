@@ -9,6 +9,12 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
 
+
+/**
+ * @author 齐豪
+ *
+ * */
+
 public class DoctorDaoTest {
 
     DoctorDao doctorDao = new DoctorDao();

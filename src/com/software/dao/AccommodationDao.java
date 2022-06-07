@@ -1,6 +1,7 @@
 package com.software.dao;
 
 
+
 import com.software.entity.Accommodation;
 import com.software.utils.DBUtils;
 import com.sun.xml.internal.bind.v2.model.core.ID;

@@ -9,6 +9,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
 
+/**
+ * @author 吴思天
+ *
+ * */
+
 public class RareManageDaoTest {
 
     //创建数据库访问层对象
