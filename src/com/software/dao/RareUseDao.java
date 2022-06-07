@@ -60,7 +60,7 @@ public class RareUseDao {
             st =connection.createStatement();
             //1.4定义要执行操作的SQL语句
             String sql="select Start_time,End_time,user_ID,Delmark,remarks from rare_equipment_use_table\n" +
-                    "where Delmark='0'";
+                    "where Delmark='1'";
             rs = st.executeQuery(sql);
             RareUseEntity workEntity = null;
             while(rs.next()){

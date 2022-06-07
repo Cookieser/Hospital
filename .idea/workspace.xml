@@ -8,7 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="df42e12e-51aa-4eb0-82b8-7717ea6a22a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/entity/Answer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/dao/RareUseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/RareUseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/software/dao/RareManageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/software/dao/RareUse.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +80,8 @@
       <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccommodationTest.testFindAllWork">
-    <configuration name="AccommodationTest.testAddWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RareUseDaoTest.testFindAllWork">
+    <configuration name="PatientTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -87,30 +90,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.AccommodationTest" />
-      <option name="METHOD_NAME" value="testAddWork" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccommodationTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.AccommodationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.PatientTest" />
       <option name="METHOD_NAME" value="testFindAllWork" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnswerTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -119,14 +106,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.AnswerTest" />
-      <option name="METHOD_NAME" value="testDelete" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.QuestionTest" />
+      <option name="METHOD_NAME" value="testFindAllWork" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RareUseDaoTest.testDelWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RareManageTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +122,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.RareUseDaoTest" />
-      <option name="METHOD_NAME" value="testDelWork" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.RareManageTest" />
+      <option name="METHOD_NAME" value="testFindAllWork" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,6 +139,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.software.dao" />
       <option name="MAIN_CLASS_NAME" value="com.software.dao.RareUseDaoTest" />
+      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RareUse.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.software.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.RareUse" />
       <option name="METHOD_NAME" value="testFindAllWork" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -230,20 +233,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AnswerTest.testDelete" />
-      <item itemvalue="JUnit.RareUseDaoTest.testFindAllWork" />
-      <item itemvalue="JUnit.RareUseDaoTest.testDelWork" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
-      <item itemvalue="JUnit.AccommodationTest.testAddWork" />
-      <item itemvalue="JUnit.AccommodationTest.testFindAllWork" />
+      <item itemvalue="JUnit.PatientTest.testFindAllWork" />
+      <item itemvalue="JUnit.QuestionTest.testFindAllWork" />
+      <item itemvalue="JUnit.RareManageTest.testFindAllWork" />
+      <item itemvalue="JUnit.RareUse.testFindAllWork" />
+      <item itemvalue="JUnit.RareUseDaoTest.testFindAllWork" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccommodationTest.testFindAllWork" />
-        <item itemvalue="JUnit.AccommodationTest.testAddWork" />
-        <item itemvalue="JUnit.RareUseDaoTest.testDelWork" />
         <item itemvalue="JUnit.RareUseDaoTest.testFindAllWork" />
-        <item itemvalue="JUnit.AnswerTest.testDelete" />
+        <item itemvalue="JUnit.RareUse.testFindAllWork" />
+        <item itemvalue="JUnit.RareManageTest.testFindAllWork" />
+        <item itemvalue="JUnit.QuestionTest.testFindAllWork" />
+        <item itemvalue="JUnit.PatientTest.testFindAllWork" />
       </list>
     </recent_temporary>
   </component>
@@ -290,6 +293,8 @@
       <workItem from="1654502447877" duration="520000" />
       <workItem from="1654504116885" duration="1585000" />
       <workItem from="1654506599213" duration="1673000" />
+      <workItem from="1654508508361" duration="176000" />
+      <workItem from="1654562435899" duration="681000" />
     </task>
     <servers />
   </component>
@@ -318,26 +323,26 @@
     </state>
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257436076" />
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654484671486" />
-    <state width="1493" height="304" key="GridCell.Tab.0.bottom" timestamp="1654508617331">
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom" timestamp="1654562542687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="304" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
-    <state width="1493" height="304" key="GridCell.Tab.0.center" timestamp="1654508617331">
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654562542687" />
+    <state width="1493" height="304" key="GridCell.Tab.0.center" timestamp="1654562542687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="304" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
-    <state width="1493" height="304" key="GridCell.Tab.0.left" timestamp="1654508617331">
+    <state width="1493" height="304" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654562542687" />
+    <state width="1493" height="304" key="GridCell.Tab.0.left" timestamp="1654562542687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="304" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
-    <state width="1493" height="304" key="GridCell.Tab.0.right" timestamp="1654508617331">
+    <state width="1493" height="304" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654562542687" />
+    <state width="1493" height="304" key="GridCell.Tab.0.right" timestamp="1654562542687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1493" height="304" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654508617331" />
+    <state width="1493" height="304" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654562542687" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1654257540483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -379,11 +384,11 @@
     </state>
     <state x="290" y="178" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257439170" />
     <state x="290" y="178" width="1038" height="526" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1654484674357" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1654508507417">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1654562457161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654253633564" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1654508507417" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1654562457161" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -392,14 +397,6 @@
           <url>file://$PROJECT_DIR$/src/com/software/dao/DBHelper.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/test/com/software/dao/RareManageTest.java</url>
-          <line>36</line>
-          <properties class="com.software.dao.RareManageTest" method="testDeleWork">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

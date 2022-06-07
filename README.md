@@ -17,3 +17,15 @@
 欢迎各位学习git使用共同推进项目建设！！！
 
 请使用本地仓库练习，防止出错导致整体项目延误
+
+## 分工
+- Accommodation：齐豪+王渝普
+- Answer：陈泓达
+- Bed：李欣然
+- Doctor：齐豪
+- Patient：王渝普
+- Question：陈泓达
+- RareManage：吴思天
+- RareUse：吴思天
+- Room：李欣然
+
