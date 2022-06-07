@@ -43,10 +43,10 @@ public class AnswerDao {
             while(rs.next()){
                 answer = new Answer();
                 int ID= rs.getInt("ID");
-                int QID =rs.getInt("QuestionID");
+                int questionID =rs.getInt("QuestionID");
                 String Content =rs.getString("Content");
                 answer.setID(ID);
-                answer.setQuestionID(QID);
+                answer.setQuestionID(questionID);
                 answer.setContent(Content);
                 Elements.add(answer);
             }

@@ -1,4 +1,4 @@
-package com.software.model;
+package com.software.entity;
 
 /**
  * 实体层--员工类

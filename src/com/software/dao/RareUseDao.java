@@ -1,6 +1,7 @@
 package com.software.dao;
 
-import com.software.model.RareUseEntity;
+
+import com.software.entity.RareUseEntity;
 import com.software.utils.DBUtils;
 
 import java.sql.Connection;
@@ -18,8 +19,8 @@ public class RareUseDao {
      * @return
      */
     public int addWork(RareUseEntity rareUseEntity){
-        String sql="insert into rare_equipment_use_table (Start_time,End_time,user_ID,Delmark,remarks) values ('"+rareUseEntity.getStart_time()+"','"+
-                rareUseEntity.getEnd_time()+"','"+rareUseEntity.getUser_ID()+"','"+rareUseEntity.getDelMark()+"','"+rareUseEntity.getRemarks()+"')";
+        String sql="insert into rare_equipment_use_table (Start_time,End_time,user_ID,Delmark,remarks) values ('"+rareUseEntity.getStartTime()+"','"+
+                rareUseEntity.getEndTime()+"','"+rareUseEntity.getUserID()+"','"+rareUseEntity.getDelMark()+"','"+rareUseEntity.getRemarks()+"')";
         int count = DBUtils.executeSql(sql);
         return count;
     }
@@ -29,8 +30,8 @@ public class RareUseDao {
      * @return
      */
     public int updateWork(RareUseEntity rareUseEntity){
-        String sql="update rare_equipment_use_table set Start_time='"+rareUseEntity.getStart_time()+"',End_time='"+rareUseEntity.getEnd_time()+"',\n" +
-                "user_ID='2',Delmark=1,remarks=Null where ID='"+rareUseEntity.getId()+"'";
+        String sql="update rare_equipment_use_table set Start_time='"+rareUseEntity.getStartTime()+"',End_time='"+rareUseEntity.getEndTime()+"',\n" +
+                "user_ID='2',Delmark=1,remarks=Null where ID='"+rareUseEntity.getUserID()+"'";
         System.out.println(sql);
 
         int count =DBUtils.executeSql(sql);
@@ -42,7 +43,7 @@ public class RareUseDao {
      * @return
      */
     public int deleteWorkById(RareUseEntity rareUseEntity){
-        String sql="update rare_equipment_use_table set Delmark='1' where ID='"+rareUseEntity.getId()+"'";
+        String sql="update rare_equipment_use_table set Delmark='1' where ID='"+rareUseEntity.getUserID()+"'";
 
         int count =DBUtils.executeSql(sql);
         return count;
@@ -70,9 +71,9 @@ public class RareUseDao {
                 String et =rs.getString("End_time");
                 int uid =rs.getInt("user_ID");
 
-                workEntity.setEnd_time(stt);
-                workEntity.setEnd_time(et);
-                workEntity.setUser_ID(uid);
+                workEntity.setStartTime(stt);
+                workEntity.setEndTime(et);
+                workEntity.setUserID(uid);
 
                 //添加集合对象(封装)
                 works.add(workEntity);

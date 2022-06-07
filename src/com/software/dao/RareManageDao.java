@@ -1,6 +1,7 @@
 package com.software.dao;
 
-import com.software.model.RareManageEntity;
+
+import com.software.entity.RareManageEntity;
 import com.software.utils.DBUtils;
 
 import java.sql.Connection;
@@ -67,7 +68,7 @@ public class RareManageDao {
             st =connection.createStatement();
             //1.4定义要执行操作的SQL语句
             String sql="select equipment_name,equipment_type,in_use,Delmark,\n" +
-                    "Room_ID,remarks from rare_equipment_management_table where Delmark='0'";
+                    "Room_ID,remarks from rare_equipment_management_table where Delmark='1'";
             rs = st.executeQuery(sql);
             RareManageEntity RareManageEntity = null;
             while(rs.next()){

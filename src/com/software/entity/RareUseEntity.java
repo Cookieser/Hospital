@@ -1,4 +1,4 @@
-package com.software.model;
+package com.software.entity;
 
 public class RareUseEntity {
     private String startTime;
@@ -6,48 +6,30 @@ public class RareUseEntity {
     private Integer userID;
     private String remarks;
     private Integer delMark;
-    private Integer id;
-
-    public Integer getDelMark() {
-        return delMark;
-    }
-
-    public void setDelMark(Integer delMark) {
-        this.delMark = delMark;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
 
-
-    public String getStart_time() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStart_time(String start_time) {
-        startTime = start_time;
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
     }
 
-    public String getEnd_time() {
+    public String getEndTime() {
         return endTime;
     }
 
-    public void setEnd_time(String end_time) {
-        endTime = end_time;
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
     }
 
-    public Integer getUser_ID() {
+    public Integer getUserID() {
         return userID;
     }
 
-    public void setUser_ID(Integer user_ID) {
-        this.userID = user_ID;
+    public void setUserID(Integer userID) {
+        this.userID = userID;
     }
 
     public String getRemarks() {
@@ -58,6 +40,12 @@ public class RareUseEntity {
         this.remarks = remarks;
     }
 
+    public Integer getDelMark() {
+        return delMark;
+    }
 
+    public void setDelMark(Integer delMark) {
+        this.delMark = delMark;
+    }
 
 }

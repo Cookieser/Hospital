@@ -2,8 +2,8 @@ package com.software.dao;
 
 
 
-import com.software.model.RareManageEntity;
-import com.software.model.RareUseEntity;
+
+import com.software.entity.RareUseEntity;
 import com.software.utils.DBUtils;
 import org.junit.Test;
 
@@ -24,9 +24,9 @@ public class RareUseDaoTest {
         //1.创建测试用例
         RareUseEntity rareUseEntity = new RareUseEntity();
         //2.设置测试用例的数据
-        rareUseEntity.setStart_time("2022-6-3");
-        rareUseEntity.setEnd_time("2022-6-5");
-        rareUseEntity.setUser_ID(5);
+        rareUseEntity.setStartTime("2022-6-3");
+        rareUseEntity.setEndTime("2022-6-5");
+        rareUseEntity.setUserID(5);
         rareUseEntity.setDelMark(1);
         rareUseEntity.setRemarks("Null");
 
@@ -45,10 +45,10 @@ public class RareUseDaoTest {
         //1.创建测试用例
         RareUseEntity rareUseEntity = new RareUseEntity();
         //2.设置测试用例的数据
-        rareUseEntity.setId(1);
-        rareUseEntity.setStart_time("2022-5-9");
-        rareUseEntity.setEnd_time("2022-5-24");
-        rareUseEntity.setUser_ID(2);
+        rareUseEntity.setUserID(1);
+        rareUseEntity.setStartTime("2022-5-9");
+        rareUseEntity.setEndTime("2022-5-24");
+        rareUseEntity.setUserID(2);
         rareUseEntity.setDelMark(2);
         rareUseEntity.setRemarks("Null");
 
@@ -65,7 +65,7 @@ public class RareUseDaoTest {
     @Test
     public void testDelWork(){
         RareUseEntity rareUSeEntity=new RareUseEntity();
-        rareUSeEntity.setId(2);
+        rareUSeEntity.setUserID(2);
         int result = rareUseDao.deleteWorkById(rareUSeEntity);
 
 
@@ -82,8 +82,8 @@ public class RareUseDaoTest {
     public void testFindAllWork(){
         List<RareUseEntity> works =rareUseDao.findWork();
         for(RareUseEntity RareUse:works){
-            System.out.println(RareUse.getId() + "," +
-                    RareUse.getStart_time() + "," + RareUse.getEnd_time());
+            System.out.println(RareUse.getUserID() + "," +
+                    RareUse.getStartTime() + "," + RareUse.getEndTime());
         }
     }
 }

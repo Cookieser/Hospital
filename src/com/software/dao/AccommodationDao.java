@@ -21,7 +21,7 @@ public class AccommodationDao {
 
         public int addWork(Accommodation accommodation){
 
-            String sql="insert into accommodation (ID,Start_time,End_time,bed_id,principal,operate_time,Delmark,remarks)values("+accommodation.getID()+",'"+accommodation.getStartTime()+"','"+accommodation.getEndTime()+"'," +
+            String sql="insert into accommodation (Start_time,End_time,bed_id,principal,operate_time,Delmark,remarks)values('"+accommodation.getStartTime()+"','"+accommodation.getEndTime()+"'," +
                     "'"+accommodation.getBedId()+"','"+accommodation.getPrincipal()+"','"+accommodation.getOperateTime()+"','"+accommodation.getDelMark()+"'," +
                     "'"+accommodation.getRemarks()+"')";
             int count = DBUtils.executeSql(sql);

@@ -1,6 +1,7 @@
 package com.software.dao;
 
-import com.software.model.RareManageEntity;
+
+import com.software.entity.RareManageEntity;
 import com.software.utils.DBUtils;
 import org.junit.Test;
 

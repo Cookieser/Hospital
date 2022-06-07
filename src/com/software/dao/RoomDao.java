@@ -51,11 +51,11 @@ public class RoomDao {
                 roomEntity=new RoomEntity();
                 int RID = rs.getInt("ID");
                 int Rroom_ID = rs.getInt("Room_ID");
-                String remark = rs.getString("Remark");
+                Integer principal = rs.getInt("principal");
 
                 roomEntity.setID(RID);
                 roomEntity.setRoomID(Rroom_ID);
-                roomEntity.setRemark(remark);
+                roomEntity.setPrincipal(principal);
 
                 works.add(roomEntity);
             }
