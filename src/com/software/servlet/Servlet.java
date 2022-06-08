@@ -1,5 +1,8 @@
 package com.software.servlet;
 
+import com.software.dao.DoctorDao;
+import com.software.entity.Doctor;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,17 +23,22 @@ public class Servlet extends HttpServlet {
         String uname = request.getParameter("username");
         //2.获取密码
         String pwd = request.getParameter("password");
-        System.out.println(uname);
-        System.out.println(pwd);
-//            //3.验证登陆用户的合法性
-//            if("admin".equals(uname) && "123".equals(pwd)){
-//                //合法用户.跳转到成功页面
-//                response.sendRedirect(request.getContextPath() + "/success.jsp");
-//            }
-//            else{
-//                //非法用户，跳转到登陆页面
-//                response.sendRedirect(request.getContextPath() + "/index.jsp");
-//            }
-//        }
+//        System.out.println(uname);
+//        System.out.println(pwd);
+        //3.验证登陆用户的合法性
+        Doctor doctor=new Doctor();
+        DoctorDao doctorDao=new DoctorDao();
+        doctor=doctorDao.validateLogin(uname);
+        //3.验证登陆用户的合法性
+        if(doctor != null && pwd.equals(doctor.getPassWord())){
+            //合法用户.跳转到成功页面
+
+            response.sendRedirect(request.getContextPath() + "/index.jsp");
+        }else{
+            //非法用户，跳转到登陆页面
+            response.sendRedirect(request.getContextPath() + "/login.jsp");
+        }
     }
 }
+
+
