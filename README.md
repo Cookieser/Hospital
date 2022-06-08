@@ -29,3 +29,41 @@
 - RareUse：吴思天
 - Room：李欣然
 
+## 问题
+
+- 注意结合课堂模板修改前端界面
+- 注意其中部分选择框不兼容问题
+- 输入结合具体场景加以限制
+- 页面细节部分优化
+
+## Tip
+
+#### 如何实现html->jsp
+
+1. 复制html文件
+
+2. ```
+   <%@ page contentType="text/html;charset=UTF-8" language="java" %>//添加至html前端
+   ```
+
+3. 修改代码中的相关路径，例如：
+
+   *  `href="css/bootstrap.min.css"`更改成`href="${pageContext.request.contextPath}/css/bootstrap.min.css"`
+   * `src="js/jquery.min.js">`更改成`src="${pageContext.request.contextPath}/js/jquery.min.js`
+
+4. 把代码中的html跳转改成jsp后缀
+
+#### 简单Git使用
+
+首先安装git(最好开启全局VPN)
+
+```
+git init
+git pull https://github.com/Cookieser/hospital_server.git master//拉取最新版本
+......进行修改编辑
+git add .
+git commit -m "commit注释"
+git push -u https://github.com/Cookieser/hospital_server.git master//上传commit至GitHub仓库
+```
+
+**注意：感兴趣可以点击fork新建仓库尝试，不要直接用项目主仓库尝试**
