@@ -18,14 +18,18 @@ public class BedDao {
     }
 
     public int updateWork(BedEntity bedEntity) {
-        String sql="update room set Room_ID="+bedEntity.getRoomID()+" where ID="+bedEntity.getID()+"";
+        String sql="update bed set Bed_Number='"+bedEntity.getBedNumber()+"'," +
+                "State='"+bedEntity.getState()+"',Room_ID='"+bedEntity.getRoomID()+"',\n" +
+                "Room_Clean='"+bedEntity.getRoomClean()+"',Delmark='"+bedEntity.getDelmark()+"' where ID='"+bedEntity.getID()+"'";
+        System.out.println(sql);
 
         int count = DBUtils.executeSql(sql);
         return count;
     }
 
     public int deleteWork(BedEntity bedEntity){
-        String sql="update room set DelMark=0 where ID="+bedEntity.getID()+" ";
+        String sql="update bed set DelMark=0 where ID="+bedEntity.getID()+" ";
+        System.out.println(sql);
         //1.5执行sql语句操作
         int count = DBUtils.executeSql(sql);
         return count;

@@ -29,6 +29,7 @@
   <div id="content-header">
       <h1>床位增添</h1>
   </div>
+    <form id="loginform" class="form-vertical" action="${pageContext.request.contextPath}/addBed" method="get">
  <div class="container-fluid">
   <div class="row-fluid">
     <div class="span7">
@@ -38,11 +39,12 @@
           <h5>请核实信息后变更床位</h5>
            <br />
             <br />
+
             <div class="control-group">
               <label class="control-label">公寓楼号：</label>
               
               <div class="controls">
-                <select >
+                <select name="apartment">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -54,7 +56,7 @@
               <div class="control-group">
               <label class="control-label">楼宇区号：</label>
               <div class="controls">
-                <select >
+                <select name="district">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -64,7 +66,7 @@
               <div class="control-group">
               <label class="control-label">区域房间号：</label>
               <div class="controls">
-                <select >
+                <select name="roomID">
                   <option>01</option>
                   <option>02</option>
                   <option>03</option>
@@ -79,7 +81,7 @@
                  <div class="control-group">
               <label class="control-label">房间床位号：</label>
               <div class="controls">
-                <select >
+                <select name="bedID">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -96,7 +98,7 @@
              
              <div class="controls">
               
-                <select >
+                <select name="whetherInuse">
                 		
                   
                   <option>1</option>
@@ -109,30 +111,37 @@
               <label class="control-label">最近房间打扫时间 :</label>
               <div class="controls">
                 <div  data-date="12-02-2012" class="input-append date datepicker">
-                  <input type="text" value="12-02-2012"  data-date-format="mm-dd-yyyy" class="span11" >
+                  <input type="text" value="12-02-2012"  data-date-format="mm-dd-yyyy" class="span11" name="Room_clean">
                   <span class="add-on"><i class="icon-th"></i></span> </div>
-          
-          
-               <div class="control-group">
-              <label class="control-label">房间备注：</label>
-              <div class="controls">
-                  <input type="text" class="span11" placeholder="查看房间备注" maxlength="20"/>
-              
+
+
+
            
               </div>
             <div class="form-actions">
-              <center><button type="submit" class="btn btn-primary">重置</button></center>
+              <center><button type="reset" class="btn btn-primary">重置</button></center>
               <center><button type="submit" class="btn btn-success">保存</button></center>
             </div>
-          </form>
+
         </div>
       </div>
     </div>
   </div>
+                 </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+    </form>
+
   <div class="row-fluid">
    
   </div>
  </div>
+
 </div>
 
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>

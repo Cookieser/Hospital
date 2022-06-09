@@ -5,8 +5,8 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>Servlet</servlet-name>
-        <servlet-class>com.software.servlet.Servlet</servlet-class>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.software.servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>InfoServlet</servlet-name>
@@ -15,6 +15,19 @@
     <servlet>
         <servlet-name>AddDoctorServlet</servlet-name>
         <servlet-class>com.software.servlet.AddDoctorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddBedServlet</servlet-name>
+        <servlet-class>com.software.servlet.AddBedServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.software.servlet.UpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteBedServlet</servlet-name>
+        <servlet-class>com.software.servlet.DeleteBedServlet</servlet-class>
     </servlet>
 
 </web-app>

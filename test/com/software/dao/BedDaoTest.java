@@ -35,8 +35,11 @@ public class BedDaoTest {
     public void testUpdate(){
         BedEntity bedEntity = new BedEntity();
         bedEntity.setID(4);
-        bedEntity.setRoomID(8);
+        bedEntity.setRoomID(2);
         bedEntity.setState(1);
+        bedEntity.setState(1);
+        bedEntity.setBedNumber(66666);
+        bedEntity.setDelmark(1);
 
         int count=bedDao.updateWork(bedEntity);
         if(count >0){

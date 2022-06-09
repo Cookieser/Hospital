@@ -1,3 +1,9 @@
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="com.software.dao.BedDao" %>
+<%@ page import="com.software.utils.DBUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,65 +34,49 @@
             <table class="table table-bordered data-table">
               <thead>
                 <tr>
+                  <th>ID</th>
                   <th>床位编号</th>
-                  <th>状态(0:未使用;1:使用中)</th>
+                  <th>状态</th>
                   <th>房间编号</th>
                   <th>上次清洁时间</th>
-                  <th>备注</th>
+                  <th>操作</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="gradeX">
-                  <td>3</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>2022-5-6</td>
-                  <td class="center">无</td>
-                </tr>
-                <tr class="gradeC">
-                  <td>3</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>2022-5-6</td>
-                  <td class="center">无</td>
-                </tr>
-                <tr class="gradeA">
-                  <td>3</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>2022-5-6</td>
-                  <td class="center">无</td>
-                </tr>
-                <tr class="gradeA">
-                  <td>3</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>2022-5-6</td>
-                  <td class="center">无</td>
-                </tr>
-                <tr class="gradeA">
-                  <td>3</td>
-                  <td>0</td>
-                  <td>6</td>
-                  <td>2022-5-6</td>
-                  <td class="center">无</td>
-                </tr>
-                <tr class="gradeA">
-                  <td>3</td>
-                  <td>1</td>
-                  <td>6</td>
-                  <td>2022-5-6</td>
-                  <td class="center">无</td>
-                </tr>
-                <tr class="gradeA">
-                  <td>3</td>
-                  <td>0</td>
-                  <td>6</td>
-                  <td>2022-5-6</td>
-                  <td class="center">无</td>
-                </tr>
+              <%
+                try {
 
-              </tbody>
+                Connection connection = null;
+                connection = DBUtils.getConnection();
+                Statement stmt = null;
+                ResultSet rs = null;
+                String sql = "select ID,Bed_Number,State,Room_ID,Room_Clean from bed where DelMark=1"; //查询语句
+                stmt = connection.createStatement();
+                rs = stmt.executeQuery(sql);
+                int status=0;
+                String statusPrint;
+                while (rs.next()) {
+                  status= rs.getInt("State");
+                  if(status==0) statusPrint="未使用";else statusPrint="使用中";
+                  int id=rs.getInt("ID");
+              %>
+              <tr>
+                <td><%=id%></td>
+                <td><%=rs.getInt("Bed_Number")%></td>
+                <td><%=statusPrint%></td>
+                <td><%=rs.getInt("Room_ID")%></td>
+                <td><%=rs.getString("Room_Clean")%></td>
+                <td><a href='${pageContext.request.contextPath}/UpdateBed.jsp'>修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
+              </tr>
+                <%
+                }
+                } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("数据库连接失败");
+                }
+              %>
+              
+              </tr>
+
             </table>
           </div>
         </div>
@@ -94,7 +84,13 @@
     </div>
   </div>
 </div>
-
+<script type="text/javascript">
+  function delWorkById(wid){
+      if(window.confirm("确认删除医生工号为" + wid +"的记录吗?")){
+        window.location.href = '${pageContext.request.contextPath}/deleteBed?id='+wid;
+    }
+  }
+</script>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/jquery.ui.custom.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>

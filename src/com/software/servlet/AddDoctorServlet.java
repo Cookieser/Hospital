@@ -73,6 +73,7 @@ public class AddDoctorServlet extends HttpServlet {
 
         doctor.setDelMark("1");
         doctorDao.addWork(doctor);
+        response.sendRedirect(request.getContextPath() + "/success.jsp");
 
     }
     protected void deleteWork(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
