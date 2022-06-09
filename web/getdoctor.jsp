@@ -1,3 +1,7 @@
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="com.software.utils.DBUtils" %>
+<%@ page import="java.sql.Connection" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,12 +61,40 @@
                       <td class="width70"><strong>123456</strong></td>
                     </tr>
                     <tr>
-                      <td>当前操作员工姓名：</td>
-                      <td><strong>王渝普</strong></td>
+                      <td>当前操作员工账号：</td>
+                      <td>
+                        <strong>
+                          <script type="text/javascript">
+                          let data2 = localStorage.getItem("username")
+                          document.write(data2)
+                          </script>
+
+
+                      </strong>
+                      </td>
                     </tr>
                     <tr>
                       <td>操作日期</td>
-                      <td><strong>April 01, 2013</strong></td>
+                      <td><strong>
+                        <script type="text/javascript">
+                          var today = new Date();
+                          var year = today.getFullYear();
+                          //因为月份从0开始，所以当前月份需要加1才能正确显示；
+                          var month = today.getMonth()+1;
+                          var day = today.getDate();
+                          var week = today.getDay();
+                          var w=new Array(7);   //通过自定义数组将“0”转换为“星期日”；
+                          w[0]="星期日"
+                          w[1]="星期一"
+                          w[2]="星期二"
+                          w[3]="星期三"
+                          w[4]="星期四"
+                          w[5]="星期五"
+                          w[6]="星期六"
+                          document.write(year+"年"+month+"月"+day+"日"+w[week]);
+
+                        </script>
+                      </strong></td>
                     </tr>
              
                     </tbody>

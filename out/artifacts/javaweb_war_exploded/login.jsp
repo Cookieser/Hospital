@@ -31,7 +31,8 @@
                 <label class="control-label">登陆账号</label>
                 <div class="controls">
                     <div class="main_input_box">
-                        <span class="add-on bg_lg"><i class="icon-user" style="font-size:16px;"></i></span><input type="text" value="admin" name="username"/>
+                        <span class="add-on bg_lg"><i class="icon-user" style="font-size:16px;"></i></span>
+                        <input id="name" type="text"  name="username"/>
                     </div>
                 </div>
             </div>
@@ -45,7 +46,11 @@
             </div>
             <div class="form-actions">
             
-                <span class="pull-right"><input type="submit" id="checkBtn" name="submit"  class="btn btn-success" style="width:500px;" value=" 登&nbsp;&nbsp;&nbsp;&nbsp;录"/></span>
+                <span class="pull-right">
+                    <input type="submit" id="checkBtn" name="submit"  class="btn btn-success"  onclick="print()" style="width:500px;" value=" 登&nbsp;&nbsp;&nbsp;&nbsp;录"/>
+
+
+                </span>
             </div>
             <div class="control-group normal_text">
                 <div style="font-size:14px;color:gray;"></div>
@@ -86,7 +91,12 @@
         </form>
 
     </div>
-    
+    <script language="javascript">
+        function print() {
+            var username = document.getElementById("name").value;
+            window.localStorage.setItem("username", username);
+        }
+    </script>
     <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/matrix.login.js"></script>
 </body>

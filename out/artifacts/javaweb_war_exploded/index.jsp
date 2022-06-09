@@ -24,7 +24,12 @@
             <li  class="dropdown" id="profile-messages" >
                 <a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle">
                     <i class="icon icon-user"></i>&nbsp;
-                    <span class="text">欢迎你，admin</span>&nbsp;
+                    <span class="text">
+                        <script type="text/javascript">
+                          let data2 = localStorage.getItem("username")
+                          document.write("欢迎你,"+data2)
+                          </script>
+                        </span>&nbsp;
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
