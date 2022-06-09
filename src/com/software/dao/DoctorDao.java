@@ -17,9 +17,9 @@ public class DoctorDao{
 
     public int addWork(Doctor doctor){
 
-        String sql="insert into doctor_chart(principal,doctor_num,name,age,work_year,Account,password," +
+        String sql="insert into doctor_chart(doctor_num,name,age,work_year,Account,password," +
                 "gender,birthday,Title,department,Delmark,remarks) " +
-                "values( '"+doctor.getPrincipal()+"','"+doctor.getDoctorNum()+"','"+doctor.getName()+"'," +
+                "values('"+doctor.getDoctorNum()+"','"+doctor.getName()+"'," +
                 "'"+doctor.getAge()+"','"+doctor.getYear()+"','"+doctor.getAccount()+"','"+doctor.getPassWord()+"'," +
                 "'"+doctor.getGender()+"','"+doctor.getBirthday()+"','"+doctor.getTitle()+"'," +
                 "'"+doctor.getDepartment()+"','"+doctor.getDelMark()+"','"+doctor.getRemarks()+"')";

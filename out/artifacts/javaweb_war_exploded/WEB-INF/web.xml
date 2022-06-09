@@ -12,5 +12,9 @@
         <servlet-name>InfoServlet</servlet-name>
         <servlet-class>com.software.servlet.InfoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddDoctorServlet</servlet-name>
+        <servlet-class>com.software.servlet.AddDoctorServlet</servlet-class>
+    </servlet>
 
 </web-app>

@@ -22,7 +22,6 @@ public class DoctorDaoTest {
     @Test
     public void testAddWork() {
         Doctor doctor = new Doctor();
-        doctor.setPrincipal(11);
         doctor.setDoctorNum(234);
         doctor.setName("一二三");
         doctor.setAge(89);

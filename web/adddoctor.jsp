@@ -38,18 +38,18 @@
           <h5>欢迎新医生注册</h5>
         </div>
         <div class="widget-content nopadding">
-          <form action="#" method="get" class="form-horizontal">
+          <form action="${pageContext.request.contextPath}/addDoctorServlet" method="get" class="form-horizontal" >
             <div class="control-group">
               <label class="control-label">姓名 :</label>
               <div class="controls">
-                <input type="text" class="span11" placeholder="请输入姓名" maxlength="10"/>
+                <input type="text" class="span11" placeholder="请输入姓名" maxlength="10" name="name"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">性别 :</label>
               
               <div class="controls">
-                <select >
+                <select name="gender" >
                   <option>男</option>
                   <option>女</option>
                 </select>
@@ -57,62 +57,62 @@
               <div class="control-group">
               <label class="control-label">科室</label>
               <div class="controls">
-                <select >
+                <select name="department">
                   <option>外科</option>
                   <option>内科</option>
                 </select>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">已有工作年限：</label>
-              <div class="controls">
-                  <input type="text" class="span11" placeholder="请输入已有工作年限" maxlength="20"/>  
-              </div>
+                <label class="control-label">已有工作年限：</label>
+                <div class="controls">
+                    <input type="text" class="span11" placeholder="请输入已有工作年限" maxlength="3" name="worktime"/>
+                </div>
             </div>
             <div class="control-group">
-              <label class="control-label">注册时间 :</label>
+              <label class="control-label">年龄 :</label>
               <div class="controls">
-                <div  data-date="12-02-2012" class="input-append date datepicker">
-                  <input type="text" value="12-02-2012"  data-date-format="mm-dd-yyyy" class="span11" >
-                  <span class="add-on"><i class="icon-th"></i></span> </div>
+                    <input type="text" class="span11" placeholder="请输入年龄大小" maxlength="3" name="age" required="required"/>
+                  </div>
               </div>
+                <div class="control-group">
+                    <label class="control-label">工号：</label>
+                    <div class="controls">
+                        <input type="text" class="span11" placeholder="请输入工号" maxlength="7" name="doctornum" required="required"/>
+                    </div>
+                </div>
                <div class="control-group">
               <label class="control-label">账户：</label>
               <div class="controls">
-                  <input type="text" class="span11" placeholder="请输入账户" maxlength="20"/>
+                  <input type="text" class="span11" placeholder="请输入账户" maxlength="20" name="account" required="required"/>
               
             </div>
              <div class="control-group">
               <label class="control-label">密码 :</label>
               <div class="controls">
-                  <input type="text" class="span11" placeholder="请输入密码" maxlength="20"/>
+                  <input type="password" class="span11" placeholder="请输入密码" maxlength="20" name="password" required="required"/>
                
               </div>
                <div class="control-group">
               <label class="control-label">生日：</label>
               <div class="controls">
-                  <input type="text" class="span11" placeholder="请输入生日" maxlength="20"/>
+                  <input type="text" class="span11" placeholder="请输入生日" maxlength="20" name="birthday"/>
               
-              </div>
-              <div class="control-group">
-              <label class="control-label">备注：</label>
-              <div class="controls">
-                <select >
-                  <option>1</option>
-                </select>
               </div>
           <div class="control-group">
               <label class="control-label">职务：</label>
               
               <div class="controls">
-                <select >
+                <select name="title" >
                   <option>医生</option>
                   <option>护工</option>
                 </select>
               </div>
             <div class="form-actions">
-              <center><button type="submit" class="btn btn-primary">重置</button></center>
-              <center><button type="submit" class="btn btn-success">保存</button></center>
+                <center>
+              <button type="reset" class="btn btn-primary">重置</button>
+             <button type="submit" class="btn btn-success">保存</button>
+                </center>
             </div>
           </form>
         </div>
