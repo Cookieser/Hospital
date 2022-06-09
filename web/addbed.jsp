@@ -45,22 +45,22 @@
               
               <div class="controls">
                 <select name="apartment">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
+                  <option value="1">#1</option>
+                  <option value="2">#2</option>
+                  <option value="3">#3</option>
+                  <option value="4">#4</option>
+                  <option value="5">#5</option>
+                  <option value="6">#6</option>
                 </select></div>
               </div>
               <div class="control-group">
               <label class="control-label">楼宇区号：</label>
               <div class="controls">
                 <select name="district">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
+                  <option value="1">A区</option>
+                  <option value="2">B区</option>
+                  <option value="3">C区</option>
+                  <option value="4">D区</option>
                 </select>
               </div>
               <div class="control-group">
@@ -94,15 +94,15 @@
                 </select>
               </div>
                  <div class="control-group">
-              <label class="control-label">房间使用情况(1-空闲，0-未使用)：</label>
+              <label class="control-label">房间使用情况：</label>
              
              <div class="controls">
               
                 <select name="whetherInuse">
                 		
                   
-                  <option>1</option>
-                  <option>0</option>
+                  <option value="1">空闲</option>
+                  <option value="0">未使用</option>
                 </select>
               </div>
              <br />
