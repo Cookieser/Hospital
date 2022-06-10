@@ -31,7 +31,7 @@
 
 <div id="content">
     <div id="content-header">
-        <h1>床位增添</h1>
+        <h1>床位更改</h1>
     </div>
     <form method="get" class="form-horizontal"  action="${pageContext.request.contextPath}/updateBed" >
         <div class="container-fluid">
@@ -162,8 +162,8 @@
 
                                                 </div>
                                                 <div class="form-actions">
-                                                    <center><button type="reset" class="btn btn-primary">重置</button></center>
-                                                    <center><button type="submit" class="btn btn-success">保存</button></center>
+                                                    <center><button type="reset" class="btn btn-primary">重置</button>
+                                                    <button type="submit" class="btn btn-success">保存</button></center>
                                                 </div>
 
                                             </div>

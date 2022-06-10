@@ -31,28 +31,19 @@
       <div class="span12">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-briefcase"></i> </span>
-            <h5 >您好！</h5>
+            <h5 >员工信息管理</h5>
           </div>
           <div class="widget-content">
             <div class="row-fluid">
               <div class="span6">
+
                 <table class="">
                   <tbody>
                     <tr>
                       <td><h4>员工管理系统</h4></td>
                     </tr>
-                    <tr>
-                      <td>在这里，方便您定位：</td>
-                    </tr>
-                    <tr>
-                      <td>员工职务信息</td>
-                    </tr>
-                    <tr>
-                      <td>员工工龄</td>
-                    </tr>
-                    <tr>
-                      <td >员工科室</td>
-                    </tr>
+
+
                   </tbody>
                 </table>
               </div>
@@ -123,11 +114,7 @@
 
                   
                 </table>
-                <div class="pull-right">
-     
-                  <a class="btn btn-primary btn-large pull-right" href="#">退出</a> </div>
-              
-              </div>
+
             </div>
           </div>
         </div>

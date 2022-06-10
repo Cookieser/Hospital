@@ -42,7 +42,6 @@
           <th>开始使用时间</th>
           <th>结束使用时间</th>
           <th>使用人编号</th>
-          <th>备注</th>
           <th>操作</th>
         </tr>
         </thead>
@@ -60,7 +59,6 @@
                 <td>${work.startTime}</td>
                 <td>${work.endTime}</td>
                 <td>${work.userID}</td>
-                <td>${work.remarks}</td>
                 <td><a href='${pageContext.request.contextPath}/rareUseservlet?methodname=updateinput&wid=${work.ID}'>修改</a>|
                   <a href="javaScript:delworkById('${work.ID}')">删除</a></td>
               </tr>

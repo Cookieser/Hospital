@@ -48,6 +48,8 @@
                 <th>负责医生</th>
                 <th>家庭住址</th>
                 <th>联系方式</th>
+                <th>操作</th>
+
               </tr>
               </thead>
               <tbody>

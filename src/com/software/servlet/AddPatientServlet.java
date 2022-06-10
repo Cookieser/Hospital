@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 import java.util.List;
 
 @WebServlet(name = "addPatientServlet",urlPatterns = "/PServlet")
-public class addPatientServlet extends HttpServlet {
+public class AddPatientServlet extends HttpServlet {
     PatientDao patientDao = new PatientDao();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request,response);

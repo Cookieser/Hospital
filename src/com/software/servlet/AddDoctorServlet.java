@@ -15,7 +15,7 @@ import java.io.PrintWriter;
 import java.util.List;
 
 @WebServlet(name = "addDoctorServlet",urlPatterns = "/DServlet")
-public class addDoctorServlet extends HttpServlet {
+public class AddDoctorServlet extends HttpServlet {
     DoctorDao doctorDao = new DoctorDao();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request,response);

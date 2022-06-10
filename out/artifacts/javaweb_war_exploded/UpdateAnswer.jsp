@@ -34,7 +34,7 @@
 
 <div id="content">
     <div id="content-header">
-        <h1>改变答案</h1>
+        <h1>答案修改</h1>
     </div>
     <form id="loginform" class="form-vertical" action="${pageContext.request.contextPath}/updateAnswer" method="get">
         <div class="container-fluid">
@@ -43,14 +43,18 @@
 
                     <div class="widget-box">
                         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                            <h5>请认真思考后修改答案。</h5>
+                            <h5>请认真思考后修改答案~</h5>
                             <br />
                             <br />
 
                             <div class="control-group">
                                 <label class="control-label">答案ID :</label>
                                 <div class="controls">
-                                    <input type="text"  class="span11" name="ID">
+                                    <input type="text"  class="span11" id="ID" name="ID" disabled="disabled">
+                                    <script type="text/javascript">
+                                        let data = localStorage.getItem("answerID")
+                                        document.getElementById("ID").value = data;
+                                    </script>
 
                             <div class="control-group">
                                 <label class="control-label">回答人：</label>
@@ -71,8 +75,8 @@
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <center><button type="reset" class="btn btn-primary">重置</button></center>
-                                    <center><button type="submit" class="btn btn-success">保存</button></center>
+                                    <center><button type="reset" class="btn btn-primary">重置</button>
+                                    <button type="submit" class="btn btn-success">保存</button></center>
                                 </div>
 
                             </div>

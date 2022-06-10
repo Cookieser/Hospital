@@ -24,11 +24,11 @@
 
 <div id="content">
     <div id="content-header" class="widget-title">
-        <h1>问题题目查询表</h1>
+        <h1>问题题目查询</h1>
     </div>
     <div class="widget-box">
         <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-            <h5>数据表</h5>
+            <h5>问题数据表</h5>
         </div>
         <div class="widget-content nopadding">
             <table class="table table-bordered data-table">

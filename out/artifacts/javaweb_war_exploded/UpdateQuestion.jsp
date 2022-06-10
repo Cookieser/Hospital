@@ -27,7 +27,7 @@
 
 <div id="content">
     <div id="content-header">
-        <h1>改变问题</h1>
+        <h1>问题修改</h1>
     </div>
     <form id="loginform" class="form-vertical" action="${pageContext.request.contextPath}/updateQuestion" method="get">
         <div class="container-fluid">
@@ -36,7 +36,7 @@
 
                     <div class="widget-box">
                         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                            <h5>请认真思考后提出问题;1为养老;2为疗养;3为轻型残疾;4为严重残疾。</h5>
+                            <h5>请认真思考后提出问题~</h5>
                             <br />
                             <br />
 

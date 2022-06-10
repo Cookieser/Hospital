@@ -24,11 +24,11 @@
 
 <div id="content">
   <div id="content-header" class="widget-title">
-    <h1>问题答案库</h1>
+    <h1>答案查询</h1>
   </div>
   <div class="widget-box">
     <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-      <h5>数据表</h5>
+      <h5>答案数据表</h5>
     </div>
     <div class="widget-content nopadding">
       <table class="table table-bordered data-table">
@@ -59,7 +59,7 @@
           <td><%=rs.getInt("QuestionID")%></td>
           <td><%=rs.getString("Content")%></td>
           <td><%=rs.getInt("User_ID")%></td>
-          <td><a href='${pageContext.request.contextPath}/UpdateAnswer.jsp'>修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
+          <td><a href='${pageContext.request.contextPath}/UpdateAnswer.jsp' onclick="storeQuestion(<%=id%>)">修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
         </tr>
         <%
           }
@@ -83,6 +83,12 @@
     if(window.confirm("确认删除答案编号为" + aid +"的记录吗?")){
       window.location.href = '${pageContext.request.contextPath}/deleteAnswer?id='+aid;
     }
+  }
+
+</script>
+<script language="javascript">
+  function storeQuestion(answerID) {
+    window.localStorage.setItem("answerID", answerID);
   }
 </script>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>

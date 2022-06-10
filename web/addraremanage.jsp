@@ -84,12 +84,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="control-group">
-                                    <label class="control-label">备注 :</label>
-                                    <div class="controls">
-                                        <input type="text" name="remarks" class="span11" placeholder="备注" oninput="value=value.replace(/[^\d]/g,'')" maxlength="20"/>
-                                    </div>
-                                </div>
+
                                 <div class="form-actions">
                                     <botton type="reset" class="btn btn-primary">重置</botton>
                                     <input type="submit" value="submit" class="btn btn-success">

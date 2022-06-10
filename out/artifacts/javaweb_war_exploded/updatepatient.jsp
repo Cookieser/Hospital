@@ -99,7 +99,7 @@
                 </div>
             <div class="form-actions">
               <botton type="reset" class="btn btn-primary">重置</botton>
-              <input type="submit" value="submit" class="btn btn-success"></input>
+              <input type="submit" value="保存" class="btn btn-success"></input>
             </div>
           </form>
         </div>

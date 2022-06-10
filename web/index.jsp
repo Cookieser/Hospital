@@ -26,8 +26,8 @@
                     <i class="icon icon-user"></i>&nbsp;
                     <span class="text">
                         <script type="text/javascript">
-                          let data2 = localStorage.getItem("username")
-                          document.write("欢迎你,"+data2)
+                          let data = localStorage.getItem("username")
+                          document.write("欢迎你,"+data)
                           </script>
                         </span>&nbsp;
                     <b class="caret"></b>
@@ -65,7 +65,7 @@
                 </a>
                 <ul>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/addpatient.jsp"><i class="icon icon-caret-right"></i>添加用户</a></li>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/gotolive.jsp"><i class="icon icon-caret-right"></i>办理入驻</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/gotolive.jsp"><i class="icon icon-caret-right"></i>办理入住</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/PServlet"><i class="icon icon-caret-right"></i>查询患者信息</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/getaccommodation.jsp"><i class="icon icon-caret-right"></i>查询患者入住信息</a></li>
                 </ul>

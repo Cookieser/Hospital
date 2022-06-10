@@ -164,8 +164,8 @@
 
                   <div class="control-group">
             <div class="form-actions">
-              <center><button type="reset" class="btn btn-primary">重置</button></center>
-              <center><button type="submit" class="btn btn-success">保存</button></center>
+              <center><button type="reset" class="btn btn-primary">重置</button>
+              <button type="submit" class="btn btn-success">保存</button></center>
             </div>
 
         </div>

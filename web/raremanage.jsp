@@ -43,7 +43,6 @@
                   <th>设备类型</th>
                   <th>是否正在被使用</th>
                   <th>房间编号</th>
-                  <th>备注</th>
                   <th>操作</th>
                 </tr>
               </thead>
@@ -62,7 +61,6 @@
                       <td>${work.equipmentType}</td>
                       <td>${work.inUse}</td>
                       <td>${work.roomID}</td>
-                      <td>${work.remarks}</td>
                       <td><a href='${pageContext.request.contextPath}/rareManageservlet?methodname=updateinput&wid=${work.id}'&>修改</a>|
                         <a href="javaScript:delworkById('${work.id}')">删除</a></td>
                     </tr>
