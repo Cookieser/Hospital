@@ -112,28 +112,13 @@
              
                 </a>
                 <ul>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/rareUseservlet"><i class="icon icon-caret-right"></i>设备使用管理</a></li>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/addrareuse.jsp"><i class="icon icon-caret-right"></i>添加设备使用</a></li>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/rareManageservlet"><i class="icon icon-caret-right"></i>设备统计管理</a></li>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/addraremanage.jsp"><i class="icon icon-caret-right"></i>添加设备统计</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/rareUseservlet"><i class="icon icon-caret-right"></i>设备使用记录</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/addrareuse.jsp"><i class="icon icon-caret-right"></i>设备使用注册</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/rareManageservlet"><i class="icon icon-caret-right"></i>设备管理</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/addraremanage.jsp"><i class="icon icon-caret-right"></i>添加设备</a></li>
                 </ul>
             </li>
-<%--            <li class="submenu"> --%>
-<%--                <a href="#">--%>
-<%--                    <i class="icon icon-fullscreen"></i> --%>
-<%--                    <span>系统设置</span> --%>
-<%--                --%>
-<%--                </a>--%>
-<%--                <ul>--%>
-<%--                    <li><a class="menu_a" link="${pageContext.request.contextPath}/buttons.html"><i class="icon icon-caret-right"></i> 按钮 &amp; 图标</a></li>--%>
-<%--                    <li><a class="menu_a" link="${pageContext.request.contextPath}/grid.html"><i class="icon icon-caret-right"></i>页面布局</a></li>--%>
-<%--                    <li><a class="menu_a" link="${pageContext.request.contextPath}/tables.html"><i class="icon icon-caret-right"></i>表格</a></li>--%>
-<%--                    <li><a class="menu_a" link="${pageContext.request.contextPath}/widgets.html"><i class="icon icon-caret-right"></i>插件</a></li>--%>
-<%--                    <li><a class="menu_a" link="form-common.html"><i class="icon icon-caret-right"></i>基本表单</a></li>--%>
-<%--                    <li><a class="menu_a" link="interface.html"><i class="icon icon-caret-right"></i>元素</a></li>--%>
-<%--                    --%>
-<%--                </ul>--%>
-<%--            </li>--%>
+
 
         </ul>
     </div>

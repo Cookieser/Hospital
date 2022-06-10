@@ -59,13 +59,21 @@
                             <div class="control-group">
                                 <label class="control-label">回答人：</label>
                                 <div class="controls">
-                                    <input type="text" name="userID" class="span11" placeholder="请输入回答人ID" maxlength="20"/>
+                                    <input type="text"  id="userID" name="userID" class="span11"  maxlength="20" disabled="disabled"/>
+                                    <script type="text/javascript">
+                                        let data2 = localStorage.getItem("personID")
+                                        document.getElementById("userID").value = data2;
+                                    </script>
                                 </div>
 
                                 <div class="control-group">
                                     <label class="control-label">问题题目：</label>
                                     <div class="controls">
-                                        <input type="text" name="questionID" class="span11" placeholder="请输入对应问题ID" maxlength="20"/>
+                                        <input type="text" name="questionID" id="questionID" class="span11"  maxlength="20" disabled="disabled"/>
+                                        <script type="text/javascript">
+                                            let data3 = localStorage.getItem("QSID")
+                                            document.getElementById("questionID").value = data3;
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="control-group">

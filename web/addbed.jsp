@@ -107,18 +107,35 @@
                         </div>
 
                           <div class="control-group">
-                              <label  class="control-label">区域房间号：</label>
+                              <label  class="control-label">房间ID ：</label>
                               <div class="controls">
                                   <select name="roomID">
-                                      <option>01</option>
-                                      <option>02</option>
-                                      <option>03</option>
-                                      <option>04</option>
-                                      <option>05</option>
-                                      <option>06</option>
-                                      <option>07</option>
-                                      <option>08</option>
-                                      <option>09</option>
+                                      <%
+                                          try {
+
+                                              Connection connection = null;
+                                              connection = DBUtils.getConnection();
+                                              Statement stmt = null;
+                                              ResultSet rs = null;
+                                              String sql = "SELECT ID,Room_ID FROM `room` WHERE DelMark=1"; //查询语句
+                                              stmt = connection.createStatement();
+                                              rs = stmt.executeQuery(sql);
+
+                                              while (rs.next()) {
+                                                  int id= rs.getInt("ID");
+                                                  int roomID=rs.getInt("Room_ID");
+
+
+
+                                      %>
+                                      <option value="<%=id%>"><%=roomID%></option>
+                                      <%
+                                              }
+                                          } catch (Exception e) {
+                                              e.printStackTrace();
+                                              System.out.println("数据库连接失败");
+                                          }
+                                      %>
                                   </select>
                               </div>
 

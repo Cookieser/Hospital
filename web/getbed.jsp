@@ -65,7 +65,7 @@
                 <td><%=statusPrint%></td>
                 <td><%=rs.getInt("Room_ID")%></td>
                 <td><%=rs.getString("Room_Clean")%></td>
-                <td><a href='${pageContext.request.contextPath}/UpdateBed.jsp'>修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
+                <td><a href='${pageContext.request.contextPath}/UpdateBed.jsp' onclick="storeQuestion(<%=id%>)">修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
               </tr>
                 <%
                 }
@@ -89,6 +89,11 @@
       if(window.confirm("确认删除医生工号为" + wid +"的记录吗?")){
         window.location.href = '${pageContext.request.contextPath}/deleteBed?id='+wid;
     }
+  }
+</script>
+<script language="javascript">
+  function storeQuestion(bedID) {
+    window.localStorage.setItem("bedID", bedID);
   }
 </script>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>

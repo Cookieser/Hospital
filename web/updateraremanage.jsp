@@ -1,4 +1,7 @@
-
+<%@ page import="java.sql.Connection" %>
+<%@ page import="com.software.utils.DBUtils" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -38,49 +41,74 @@
             <div class="span7">
 
                 <div class="widget-box">
-                    <form id="loginform" class="form-vertical" action="${pageContext.request.contextPath}/rareManageservlet" method="get">
-                        <input type="hidden" name="methodname" value="update">
                         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
                             <h5>信息录入</h5>
-                            <input type="hidden" name="ID" value="${workmodel.ID}">
                         </div>
                         <div class="widget-content nopadding">
-                            <form action="#" method="get" class="form-horizontal">
-                                <div class="control-group">
+                            <form id="loginform" class="form-vertical" action="${pageContext.request.contextPath}/rareManageservlet" method="get">
+                                <input type="hidden" name="methodname" value="update">
+
+                                <input type="hidden" name="ID" value="${workmodel.ID}">
+
+                            <div class="control-group">
                                     <label class="control-label">设备名称 :</label>
                                     <div class="controls">
                                         <input type="text" name="equipmentName" class="span11" value="${workmodel.equipmentName}" placeholder="请输入设备名称" maxlength="10"/>
                                     </div>
-                                </div>
+                                    </div>
+
 
 
                                 <div class="control-group">
                                     <label class="control-label">设备类型 :</label>
                                     <div class="controls">
-                                        <input type="text" name="equipmentType" class="span11" value="${workmodel.equipmentType}" placeholder="请输入设备类型" maxlength="5"/>
+                                        <select name="equipmentType" placeholder="请选择设备状态">
+                                            <option >医疗型</option>
+                                            <option >娱乐型</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">是否正在使用 :</label>
                                     <div class="controls">
-                                        <input type="text" name="inUse" class="span11"  value="${workmodel.inUse}" placeholder="请输入是/否" maxlength="1"/>
+
+                                        <select name="inUse" placeholder="请选择设备状态">
+                                            <option value="0">未使用</option>
+                                            <option value="1">正在使用</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label">房间编号 :</label>
+                                    <label class="control-label">房间ID :</label>
                                     <div class="controls">
                                         <select name="roomID">
-                                            <option value="${workmodel.roomID}">${workmodel.roomID}</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
+                                            <%
+                                                try {
+
+                                                    Connection connection = null;
+                                                    connection = DBUtils.getConnection();
+                                                    Statement stmt = null;
+                                                    ResultSet rs = null;
+                                                    String sql = "SELECT ID,Room_ID FROM `room` WHERE DelMark=1"; //查询语句
+                                                    stmt = connection.createStatement();
+                                                    rs = stmt.executeQuery(sql);
+
+                                                    while (rs.next()) {
+                                                        int id= rs.getInt("ID");
+                                                        int roomID=rs.getInt("Room_ID");
+
+
+
+                                            %>
+                                            <option value="<%=id%>"><%=roomID%></option>
+                                            <%
+                                                    }
+                                                } catch (Exception e) {
+                                                    e.printStackTrace();
+                                                    System.out.println("数据库连接失败");
+                                                }
+                                            %>
                                         </select>
                                     </div>
                                 </div>

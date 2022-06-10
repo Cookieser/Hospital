@@ -1,4 +1,7 @@
-<%--<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>--%>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="com.software.utils.DBUtils" %>
+<%@ page import="java.sql.Connection" %><%--<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>--%>
 <%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
 <%--<!DOCTYPE html>--%>
 <%--<html lang="en">--%>
@@ -157,15 +160,46 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">使用人编号 :</label>
+                                    <label class="control-label">使用者 :</label>
                                     <div class="controls">
-                                        <input type="text" name="userID" class="span11"  value="${workmodel.userID}" placeholder="请输入使用人编号" maxlength="1"/>
+                                        <select name="userID">
+                                            <%
+                                                try {
+
+                                                    Connection connection = null;
+                                                    connection = DBUtils.getConnection();
+                                                    Statement stmt = null;
+                                                    String sql = "select User_ID,patient_name from patient where DelMark=1"; //查询语句
+                                                    stmt = connection.createStatement();
+                                                    ResultSet rs = null;
+                                                    rs = stmt.executeQuery(sql);
+
+                                                    while (rs.next()) {
+                                                        int id= rs.getInt("User_ID");
+                                                        String name = rs.getString("patient_name");
+
+
+
+                                            %>
+                                            <option value="<%=id%>"><%=id%>-<%=name%></option>
+                                            <%
+                                                    }
+                                                } catch (Exception e) {
+                                                    e.printStackTrace();
+                                                    System.out.println("数据库连接失败");
+                                                }
+                                            %>
+                                        </select>
+
+
                                     </div>
                                 </div>
 
                                 <div class="form-actions">
+                                    <center>
                                     <botton type="reset" class="btn btn-primary">重置</botton>
                                     <input type="submit" value="保存" class="btn btn-success">
+                                    </center>
                                 </div>
                             </form>
                         </div>

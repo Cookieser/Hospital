@@ -53,13 +53,16 @@
             rs = stmt.executeQuery(sql);
             while (rs.next()) {
               int id=rs.getInt("ID");
+              int questionID=rs.getInt("QuestionID");
+              int useID=rs.getInt("User_ID");
+
         %>
         <tr>
           <td><%=id%></td>
-          <td><%=rs.getInt("QuestionID")%></td>
+          <td><%=questionID%></td>
           <td><%=rs.getString("Content")%></td>
-          <td><%=rs.getInt("User_ID")%></td>
-          <td><a href='${pageContext.request.contextPath}/UpdateAnswer.jsp' onclick="storeQuestion(<%=id%>)">修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
+          <td><%=useID%></td>
+          <td><a href='${pageContext.request.contextPath}/UpdateAnswer.jsp' onclick="storeQuestion(<%=id%>,<%=useID%>,<%=questionID%>,)">修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
         </tr>
         <%
           }
@@ -87,8 +90,10 @@
 
 </script>
 <script language="javascript">
-  function storeQuestion(answerID) {
+  function storeQuestion(answerID,personID,QSID) {
     window.localStorage.setItem("answerID", answerID);
+    window.localStorage.setItem("personID", personID);
+    window.localStorage.setItem("QSID", QSID);
   }
 </script>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
