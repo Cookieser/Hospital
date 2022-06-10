@@ -21,8 +21,8 @@ public class QuestionDao {
         int count = DBUtils.executeSql(sql);
         return count;
     }
-    public int Delete(Question question){
-        String sql="update question set DelMark="+question.getDelMark()+" where ID="+question.getID()+" ";
+    public int Delete(Integer id){
+        String sql="update question set DelMark=0 where ID="+id+" ";
         //1.5执行sql语句操作
         int count = DBUtils.executeSql(sql);
         return count;

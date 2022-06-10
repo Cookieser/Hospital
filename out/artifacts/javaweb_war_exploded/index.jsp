@@ -77,7 +77,7 @@
 
                 </a>
 				<ul> 			
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/questionmodel.jsp"><i class="icon icon-caret-right"></i>模板管理</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/getquestion.jsp"><i class="icon icon-caret-right"></i>模板管理</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/answerbase.jsp"><i class="icon icon-caret-right"></i>答案收集</a></li>
                 </ul>
             </li>

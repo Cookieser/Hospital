@@ -44,9 +44,9 @@ public class QuestionTest {
     public void testDelete(){
         Question question = new Question();
         question.setDelMark(0);
-        question.setID(10);
+        Integer id=3;
         //1.5执行sql语句操作
-        int count = Questiondao.Delete(question);
+        int count = Questiondao.Delete(id);
         if(count >0){
             System.out.println("success");
         }else{

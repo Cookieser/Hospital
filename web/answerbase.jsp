@@ -1,92 +1,90 @@
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="com.software.dao.AnswerDao" %>
+<%@ page import="com.software.utils.DBUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Matrix Admin</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap-responsive.min.css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/uniform.css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/select2.css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/matrix-style2.css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/matrix-media.css" />
-<link href="${pageContext.request.contextPath}/font-awesome/css/font-awesome.css" rel="stylesheet" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  <title>Matrix Admin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/uniform.css" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/select2.css" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/matrix-style2.css" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/matrix-media.css" />
+  <link href="${pageContext.request.contextPath}/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div id="content">
-  <div id="content-header">
-      <h1>表格</h1>
+  <div id="content-header" class="widget-title">
+    <h1>问题答案库</h1>
   </div>
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="span12">
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-            <h5>问题库</h5>
-          </div>
-          <div class="widget-content nopadding">
-            <table class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>答案编号</th>
-                  <th>回答用户ID</th>
-                  <th>对应问题</th>
-                  <th>答案内容</th>
+  <div class="widget-box">
+    <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+      <h5>数据表</h5>
+    </div>
+    <div class="widget-content nopadding">
+      <table class="table table-bordered data-table">
+        <thead>
+        <tr>
+          <th>答案ID</th>
+          <th>对应问题ID</th>
+          <th>答案内容</th>
+          <th>回答人</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <%
+          try {
 
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>您或者您的家人是否需要特殊护理人员？</td>
-                  <td class="center"> 腰酸背痛，需要日常中医药护理</td>
-                  
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td rowspan="2">3</td>
-                  <td>您或者您的家人是否需要特殊护理人员？</td>
-                  <td class="center">需要进行腿部肌肉日常康复训练</td>
-                  
-                </tr>
-                <tr>
-                  <td>3</td>
+            Connection connection = null;
+            connection = DBUtils.getConnection();
+            Statement stmt = null;
+            ResultSet rs = null;
+            String sql = "select ID,QuestionID,Content,User_ID from answer where DelMark=1"; //查询语句
+            stmt = connection.createStatement();
+            rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+              int id=rs.getInt("ID");
+        %>
+        <tr>
+          <td><%=id%></td>
+          <td><%=rs.getInt("QuestionID")%></td>
+          <td><%=rs.getString("Content")%></td>
+          <td><%=rs.getInt("User_ID")%></td>
+          <td><a href='${pageContext.request.contextPath}/UpdateAnswer.jsp'>修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
+        </tr>
+        <%
+          }
+          } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("数据库连接失败");
+          }
+        %>
 
-                  <td>您的子女是否经常探望？</td>
-                  <td class="center">子女满堂，经常探望</td>
-                  
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>您是否存在慢性病？</td>
-                  <td class="center">有慢性病，痰多咳嗽，慢性鼻炎</td>
-                  
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>1</td>
-                  <td>您是否患有突发疾病？</td>
-                  <td class="center">没有突发疾病，偶尔心绞痛</td>
-                  
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>您是否有家族遗传病</td>
-                  <td class="center">具有家族遗传心血管疾病</td>
-                  
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        
+        </tr>
 
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  function delWorkById(aid){
+    if(window.confirm("确认删除答案编号为" + aid +"的记录吗?")){
+      window.location.href = '${pageContext.request.contextPath}/deleteAnswer?id='+aid;
+    }
+  }
+</script>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/jquery.ui.custom.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
