@@ -70,11 +70,22 @@
                                 <div class="control-group">
                                     <label class="control-label">房间编号 :</label>
                                     <div class="controls">
-                                        <input type="text" name="roomID" class="span11" placeholder="请输入房间编号" oninput="value=value.replace(/[^\d]/g,'')" maxlength="5"/>
+                                        <select name="roomID">
+                                            <option value="${workmodel.roomID}">${workmodel.roomID}</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">房间编号 :</label>
+                                    <label class="control-label">备注 :</label>
                                     <div class="controls">
                                         <input type="text" name="remarks" class="span11" placeholder="备注" oninput="value=value.replace(/[^\d]/g,'')" maxlength="20"/>
                                     </div>
