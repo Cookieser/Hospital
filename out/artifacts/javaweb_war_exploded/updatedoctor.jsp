@@ -60,7 +60,6 @@
               <label class="control-label">职称 :</label>
               <div class="controls">
                 <select name="title"  class="form-control" style="width:80px" id="title">
-                  <option value="${doctormodel.title}">${doctormodel.title}</option>
                   <option value="医生">医生</option>
                   <option value="护士">护士</option>
                   <option value="护工">护工</option>

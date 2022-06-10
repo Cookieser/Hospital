@@ -52,12 +52,13 @@
                   <tbody>
                     <tr>
                     <tr>
-                      <td class="width30">当前操作员工ID:</td>
-                      <td class="width70"><strong>123456</strong></td>
-                    </tr>
-                    <tr>
-                      <td>当前操作员工姓名：</td>
-                      <td><strong>王渝普</strong></td>
+                      <td>当前操作账户：</td>
+                      <td><strong>
+                        <script type="text/javascript">
+                          let data = localStorage.getItem("username")
+                          document.write(data)
+                        </script>
+                      </strong></td>
                     </tr>
                     <tr>
                       <td>操作日期</td>
