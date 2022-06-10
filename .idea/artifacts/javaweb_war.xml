@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javaweb:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/javaweb_war</output-path>
+    <root id="archive" name="javaweb_war.war">
+      <element id="artifact" artifact-name="javaweb:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/standard.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -4,6 +4,8 @@ package com.software.entity;
  * 实体层--员工类
  */
 public class RareManageEntity {
+
+
     private Integer id;
     private String equipmentType;
     private String equipmentName;
@@ -21,6 +23,13 @@ public class RareManageEntity {
 
     //select account,password,name,sex,birthday,age from work;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getDelMark() {
         return delMark;
@@ -58,13 +67,6 @@ public class RareManageEntity {
 
 
 
-    public Integer getRoom_ID() {
-        return roomID;
-    }
-
-    public void setRoom_ID(Integer room_ID) {
-        roomID = room_ID;
-    }
 
     public String getRemarks() {
         return remarks;
@@ -75,12 +77,13 @@ public class RareManageEntity {
     }
 
 
+    public Integer getRoomID() {
+        return roomID;
+    }
 
-
-
-
-
-
+    public void setRoomID(Integer roomID) {
+        this.roomID = roomID;
+    }
 }
 
 

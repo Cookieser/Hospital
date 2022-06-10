@@ -26,6 +26,7 @@
 <body>
 
 <div id="content">
+
   <div id="content-header">
       <h1>用户注册</h1>
   </div>
@@ -34,6 +35,8 @@
     <div class="span7">
 
       <div class="widget-box">
+        <form id="loginform" class="form-vertical" action="${pageContext.request.contextPath}/PServlet" method="get">
+          <input type="hidden" name="methodname" value="add">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
           <h5>患者信息录入</h5>
         </div>
@@ -42,30 +45,30 @@
             <div class="control-group">
               <label class="control-label">姓名 :</label>
               <div class="controls">
-                <input type="text" class="span11" placeholder="请输入姓名" maxlength="10"/>
+                <input type="text" name="patientname" class="span11" placeholder="请输入姓名" maxlength="10"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">性别 :</label>
               <div class="controls">
-                <select >
+                <select name="gender">
                   <option>男</option>
                   <option>女</option>
                 </select>
               </div>
             </div>
+
             <div class="control-group">
               <label class="control-label">主治医生编号 :</label>
               <div class="controls">
-                <select >
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
+                <select name="DID">
+                  <option value="1">王大普</option>
+                  <option value="2">陆晨陈</option>
+                  <option value="3">齐豪</option>
+                  <option value="4">陈某</option>
+                  <option value="5">王玉普</option>
+                  <option value="6">卓英</option>
+                  <option value="7">刘衡</option>
                 </select>
               </div>
             </div>
@@ -73,32 +76,35 @@
               <label class="control-label">注册时间 :</label>
               <div class="controls">
                 <div  data-date="12-02-2012" class="input-append date datepicker">
-                  <input type="text" value="12-02-2012"  data-date-format="mm-dd-yyyy" class="span11" >
+                  <input type="text" name="date" value="12-02-2012"  data-date-format="mm-dd-yyyy" class="span11" >
                   <span class="add-on"><i class="icon-th"></i></span> </div>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">身份证 :</label>
               <div class="controls">
-                <input type="text" class="span11" placeholder="请输入身份证信息" maxlength="18"/>
+                <input type="text" name="PID" class="span11" placeholder="请输入身份证信息" maxlength="18"/>
               </div>
+            </div>
               <div class="control-group">
                 <label class="control-label">地址 :</label>
                 <div class="controls">
-                  <input type="text" class="span11" placeholder="请输入家庭地址" maxlength="20"/>
+                  <input type="text" name="address" class="span11" placeholder="请输入家庭地址" maxlength="20"/>
                 </div>
-
+              </div>
                 <div class="control-group">
                   <label class="control-label">电话 :</label>
                   <div class="controls">
-                    <input type="text" class="span11" placeholder="请输入联系方式" oninput="value=value.replace(/[^\d]/g,'')" maxlength="11"/>
+                    <input type="text" name="phone" class="span11" placeholder="请输入联系方式" oninput="value=value.replace(/[^\d]/g,'')" maxlength="11"/>
                   </div>
+                </div>
             <div class="form-actions">
-              <button type="submit" class="btn btn-primary">重置</button>
-              <button type="submit" class="btn btn-success">保存</button>
+              <botton type="reset" class="btn btn-primary">重置</botton>
+              <input type="submit" value="submit" class="btn btn-success"></input>
             </div>
           </form>
         </div>
+        </form>
       </div>
     </div>
   </div>

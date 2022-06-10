@@ -66,7 +66,7 @@
                 <ul>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/addpatient.jsp"><i class="icon icon-caret-right"></i>添加用户</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/gotolive.jsp"><i class="icon icon-caret-right"></i>办理入驻</a></li>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/getpatientinfo.jsp"><i class="icon icon-caret-right"></i>查询患者信息</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/PServlet"><i class="icon icon-caret-right"></i>查询患者信息</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/getaccommodation.jsp"><i class="icon icon-caret-right"></i>查询患者入住信息</a></li>
                 </ul>
             </li>
@@ -100,7 +100,7 @@
                 
                 </a>
                 <ul>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/getdoctor.jsp"><i class="icon icon-caret-right"></i>查询用户</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/DServlet"><i class="icon icon-caret-right"></i>查询用户</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/adddoctor.jsp"><i class="icon icon-caret-right"></i>添加用户</a></li>
                 
                 </ul>
@@ -112,9 +112,10 @@
              
                 </a>
                 <ul>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/rareuse.jsp"><i class="icon icon-caret-right"></i>设备使用管理</a></li>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/raremanage.jsp"><i class="icon icon-caret-right"></i>设备统计管理</a></li>
-
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/rareUseservlet"><i class="icon icon-caret-right"></i>设备使用管理</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/addrareuse.jsp"><i class="icon icon-caret-right"></i>添加设备使用</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/rareManageservlet"><i class="icon icon-caret-right"></i>设备统计管理</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/addraremanage.jsp"><i class="icon icon-caret-right"></i>添加设备统计</a></li>
                 </ul>
             </li>
 <%--            <li class="submenu"> --%>

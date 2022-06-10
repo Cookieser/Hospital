@@ -10,7 +10,7 @@ public class Doctor {
     private String passWord;
     private String gender;
     private String birthday;
-    private String Title;
+    private String title;
     private String department;
     private String delMark;
     private String remarks;
@@ -27,7 +27,7 @@ public class Doctor {
                 ", passWord='" + passWord + '\'' +
                 ", gender='" + gender + '\'' +
                 ", birthday='" + birthday + '\'' +
-                ", Title='" + Title + '\'' +
+                ", Title='" + title + '\'' +
                 ", department='" + department + '\'' +
                 ", delMark='" + delMark + '\'' +
                 ", remarks='" + remarks + '\'' +
@@ -79,7 +79,7 @@ public class Doctor {
     }
 
     public void setAccount(String account) {
-        Account = account;
+        this.Account = account;
     }
 
     public String getPassWord() {
@@ -107,11 +107,11 @@ public class Doctor {
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getDepartment() {

@@ -71,9 +71,9 @@ git push -u https://github.com/Cookieser/hospital_server.git master//上传commi
 ## 任务完成
 
 - [ ] 主页修改
-- [ ] 添加患者
+- [x] 添加患者
 - [ ] 办理入驻
-- [ ] 查询患者信息
+- [x] 查询患者信息
 - [ ] 查询入驻信息
 - [x] 问题表查询
 - [x] 答案表查询
@@ -81,8 +81,17 @@ git push -u https://github.com/Cookieser/hospital_server.git master//上传commi
 - [x] 添加答案
 - [x] 床位查询
 - [x] 床位添加
-- [ ] 员工查询
+- [x] 员工查询
 - [x] 员工添加
 - [ ] 设备使用
 - [ ] 设备管理
+
+**注意：数据库中bed表发生更改**
+
+## 优化
+
+- [x] 完成部分前端页面优化
+- [x] 完成hash加密设计
+- [x] 完成模板修改id捆绑
+- [x] 完成登录后的账户localstore存储
 

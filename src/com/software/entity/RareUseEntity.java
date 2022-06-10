@@ -1,6 +1,9 @@
 package com.software.entity;
 
 public class RareUseEntity {
+
+
+    private Integer ID;
     private String startTime;
     private String endTime;
     private Integer userID;
@@ -8,6 +11,13 @@ public class RareUseEntity {
     private Integer delMark;
 
 
+    public Integer getID() {
+        return ID;
+    }
+
+    public void setID(Integer ID) {
+        this.ID = ID;
+    }
     public String getStartTime() {
         return startTime;
     }

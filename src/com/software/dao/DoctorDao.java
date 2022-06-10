@@ -32,13 +32,7 @@ public class DoctorDao{
      * @return
      */
     public int updateWork(Doctor doctor){
-        String sql="update doctor_chart set doctor_num='"+doctor.getDoctorNum()+"'," +
-                "name='"+doctor.getName()+"',age='"+doctor.getAge()+"',\n" +
-                "work_year='"+doctor.getYear()+"',Account='"+doctor.getAccount()+"'," +
-                "password='"+doctor.getPassWord()+"',\n" +
-                "gender='"+doctor.getGender()+"', birthday='"+doctor.getBirthday()+"'," +
-                "Title='"+doctor.getTitle()+"',department='"+doctor.getDepartment()+"'," +
-                "Delmark='"+doctor.getDelMark()+"',remarks='"+doctor.getRemarks()+"' where principal='"+doctor.getPrincipal()+"'";
+        String sql="update doctor_chart set name='"+doctor.getName()+"',age='"+doctor.getAge()+"',work_year='"+doctor.getYear()+"',gender='"+doctor.getGender()+"', birthday='"+doctor.getBirthday()+"',Title='"+doctor.getTitle()+"',department='"+doctor.getDepartment()+"',Delmark='"+doctor.getDelMark()+"' where principal='"+doctor.getPrincipal()+"'";
 
         int count =DBUtils.executeSql(sql);
         return count;
@@ -48,8 +42,8 @@ public class DoctorDao{
      * 功能：根据员工工号删除员工信息
      * @return
      */
-    public int deleteWork(Doctor doctor){
-        String sql="update doctor_chart set Delmark=0 where principal = '"+doctor.getPrincipal()+"'";
+    public int deleteWork(Integer principal){
+        String sql="update doctor_chart set Delmark=0 where principal = '"+principal+"'";
 
         int count =DBUtils.executeSql(sql);
         return count;
