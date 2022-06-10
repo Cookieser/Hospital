@@ -8,18 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="df42e12e-51aa-4eb0-82b8-7717ea6a22a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/answerbase.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/answerbase.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/getdoctor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/getdoctor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/questionmodel.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/QuestionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/QuestionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/software/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/dao/QuestionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/software/dao/QuestionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/QuestionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/answerbase.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/questionmodel.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/UpdateQuestion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/UpdateQuestion.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/getdoctor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/getdoctor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/getquestion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/getquestion.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,6 +278,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -332,6 +329,7 @@
       <workItem from="1654777824199" duration="6396000" />
       <workItem from="1654823307011" duration="1207000" />
       <workItem from="1654824537708" duration="426000" />
+      <workItem from="1654825361166" duration="2057000" />
     </task>
     <servers />
   </component>

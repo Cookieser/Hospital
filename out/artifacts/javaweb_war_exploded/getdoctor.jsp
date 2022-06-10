@@ -65,8 +65,8 @@
                       <td>
                         <strong>
                           <script type="text/javascript">
-                          let data2 = localStorage.getItem("username")
-                          document.write(data2)
+                          let data = localStorage.getItem("username")
+                          document.write(data)
                           </script>
 
 

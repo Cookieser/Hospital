@@ -43,7 +43,11 @@
                             <div class="control-group">
                                 <label class="control-label">问题ID :</label>
                                 <div class="controls">
-                                    <input type="text"  class="span11" name="ID">
+                                    <input type="text"  class="span11" name="ID" id="ID" disabled="disabled">
+                                    <script type="text/javascript">
+                                        let data = localStorage.getItem("questionID")
+                                        document.getElementById("ID").value = data;
+                                </script>
 
                             <div class="control-group">
                                 <label class="control-label">题目类型：</label>
@@ -84,6 +88,12 @@
 </div>
 
 </div>
+<script type="text/javascript">
+    function storeQuestion() {
+        let data = localStorage.getItem("questionID")
+        document.getElementById("ID").value = data;
+    }
+</script>
 
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/jquery.ui.custom.js"></script>

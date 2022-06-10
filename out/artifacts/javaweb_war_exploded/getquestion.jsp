@@ -77,7 +77,7 @@
                     <td><%=id%></td>
                     <td><%=statusPrint%></td>
                     <td><%=rs.getString("Title")%></td>
-                    <td><a href='${pageContext.request.contextPath}/UpdateQuestion.jsp'>修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
+                    <td><a href='${pageContext.request.contextPath}/UpdateQuestion.jsp' onclick="storeQuestion(<%=id%>)">修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
                 </tr>
                 <%
                         }
@@ -101,6 +101,11 @@
         if(window.confirm("确认删除问题编号为" + qid +"的记录吗?")){
             window.location.href = '${pageContext.request.contextPath}/deleteQuestion?id='+qid;
         }
+    }
+</script>
+<script language="javascript">
+    function storeQuestion(questionID) {
+        window.localStorage.setItem("questionID", questionID);
     }
 </script>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
