@@ -31,7 +31,7 @@ public class RareUseDao {
      */
     public int updateWork(RareUseEntity rareUseEntity){
         String sql="update rare_equipment_use_table set Start_time='"+rareUseEntity.getStartTime()+"',End_time='"+rareUseEntity.getEndTime()+"',\n" +
-                "user_ID='2',Delmark=1,remarks=Null where ID='"+rareUseEntity.getUserID()+"'";
+                "user_ID='"+rareUseEntity.getUserID()+"',Delmark=1,remarks=Null where ID='"+rareUseEntity.getID()+"'";
         System.out.println(sql);
 
         int count =DBUtils.executeSql(sql);

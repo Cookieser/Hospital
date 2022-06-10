@@ -63,7 +63,7 @@
                       <td>${work.inUse}</td>
                       <td>${work.roomID}</td>
                       <td>${work.remarks}</td>
-                      <td><a href='${pageContext.request.contextPath}/rareManageservlet?methodname=updateinput&wid=${work.id}'>修改</a>|
+                      <td><a href='${pageContext.request.contextPath}/rareManageservlet?methodname=updateinput&wid=${work.id}'&>修改</a>|
                         <a href="javaScript:delworkById('${work.id}')">删除</a></td>
                     </tr>
                   </c:forEach>

@@ -35,8 +35,8 @@ public class RareManageDao {
      * @return
      */
     public int updateWork(RareManageEntity rareManageEntity){
-        String sql="update rare_equipment_management_table set equipment_name='安乐椅',equipment_type='"+rareManageEntity.getEquipmentType()+"',\n" +
-                "in_use='1',Delmark='1',Room_ID='3',remarks=Null where ID='"+rareManageEntity.getID()+"'";
+        String sql="update rare_equipment_management_table set equipment_name='"+rareManageEntity.getEquipmentName()+"',equipment_type='"+rareManageEntity.getEquipmentType()+"',\n" +
+                "in_use='"+rareManageEntity.getInUse()+"',Delmark='1',Room_ID='"+rareManageEntity.getRoomID()+"',remarks=Null where ID='"+rareManageEntity.getID()+"'";
 
         System.out.println(sql);
 
