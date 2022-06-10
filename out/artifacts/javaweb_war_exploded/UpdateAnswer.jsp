@@ -50,7 +50,7 @@
                             <div class="control-group">
                                 <label class="control-label">答案ID :</label>
                                 <div class="controls">
-                                    <input type="text"  class="span11" id="ID" name="ID" disabled="disabled">
+                                    <input type="text"  class="span11" id="ID" name="ID" readonly="readonly">
                                     <script type="text/javascript">
                                         let data = localStorage.getItem("answerID")
                                         document.getElementById("ID").value = data;
@@ -59,7 +59,7 @@
                             <div class="control-group">
                                 <label class="control-label">回答人：</label>
                                 <div class="controls">
-                                    <input type="text"  id="userID" name="userID" class="span11"  maxlength="20" disabled="disabled"/>
+                                    <input type="text"  id="userID" name="userID" class="span11"  maxlength="20" readonly="readonly"/>
                                     <script type="text/javascript">
                                         let data2 = localStorage.getItem("personID")
                                         document.getElementById("userID").value = data2;
@@ -69,7 +69,7 @@
                                 <div class="control-group">
                                     <label class="control-label">问题题目：</label>
                                     <div class="controls">
-                                        <input type="text" name="questionID" id="questionID" class="span11"  maxlength="20" disabled="disabled"/>
+                                        <input type="text" name="questionID" id="questionID" class="span11"  maxlength="20" readonly="readonly"/>
                                         <script type="text/javascript">
                                             let data3 = localStorage.getItem("QSID")
                                             document.getElementById("questionID").value = data3;

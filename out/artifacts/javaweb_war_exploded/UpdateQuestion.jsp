@@ -43,7 +43,7 @@
                             <div class="control-group">
                                 <label class="control-label">问题ID :</label>
                                 <div class="controls">
-                                    <input type="text"  class="span11" name="ID" id="ID" disabled="disabled">
+                                    <input type="text"  class="span11" name="ID" id="ID" readonly="readonly">
                                     <script type="text/javascript">
                                         let data = localStorage.getItem("questionID")
                                         document.getElementById("ID").value = data;

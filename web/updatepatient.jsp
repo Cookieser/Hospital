@@ -50,7 +50,7 @@
             <div class="control-group">
               <label class="control-label">姓名 :</label>
               <div class="controls">
-                <input type="text" name="patientname" value="${patientmodel.patientName}" class="span11" placeholder="请输入姓名" maxlength="10" disabled="disabled"/>
+                <input type="text" name="patientname" value="${patientmodel.patientName}" class="span11" placeholder="请输入姓名" maxlength="10" readonly="readonly"/>
               </div>
             </div>
             <div class="control-group">

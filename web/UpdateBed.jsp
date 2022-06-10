@@ -46,7 +46,7 @@
                             <div class="control-group">
                                 <label class="control-label">床位ID :</label>
                                 <div class="controls">
-                                    <input type="text"  class="span11" name="ID" id="ID" disabled="disabled">
+                                    <input type="text"  class="span11" name="ID" id="ID" readonly="readonly">
                                     <script type="text/javascript">
                                         let data = localStorage.getItem("bedID")
                                         document.getElementById("ID").value = data;
