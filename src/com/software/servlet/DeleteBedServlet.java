@@ -1,9 +1,7 @@
 package com.software.servlet;
 
 import com.software.dao.BedDao;
-import com.software.dao.DoctorDao;
 import com.software.entity.BedEntity;
-import com.software.entity.Doctor;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

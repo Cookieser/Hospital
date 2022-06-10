@@ -1,11 +1,8 @@
-
 package com.software.servlet;
-
 import com.software.dao.BedDao;
 import com.software.dao.DoctorDao;
 import com.software.entity.BedEntity;
 import com.software.entity.Doctor;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,11 +22,13 @@ public class AddBedServlet extends HttpServlet {
         String  whetherInuse =request.getParameter("whetherInuse");
         String Bed_number = apartment+district+roomID+bedID;
         String Room_clean= request.getParameter("Room_clean");
+        String PatientID=request.getParameter("PatientID");
         //String Delmark = request.getParameter("Delmark");
         bedEntity.setBedNumber(Integer.parseInt(Bed_number));
         bedEntity.setState(Integer.parseInt(whetherInuse));
         bedEntity.setRoomID(Integer.parseInt(roomID));
         bedEntity.setRoomClean(Room_clean);
+        bedEntity.setPatientID(Integer.parseInt(PatientID));
         bedEntity.setDelmark(1);
         bedDao.addWork(bedEntity);
         response.sendRedirect(request.getContextPath() + "/success.jsp");

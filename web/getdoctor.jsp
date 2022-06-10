@@ -27,39 +27,18 @@
       <div class="span12">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-briefcase"></i> </span>
-            <h5 >您好！</h5>
+            <h5 >员工信息查询</h5>
           </div>
           <div class="widget-content">
             <div class="row-fluid">
-              <div class="span6">
-                <table class="">
-                  <tbody>
-                    <tr>
-                      <td><h4>员工管理系统</h4></td>
-                    </tr>
-                    <tr>
-                      <td>在这里，方便您定位：</td>
-                    </tr>
-                    <tr>
-                      <td>员工职务信息</td>
-                    </tr>
-                    <tr>
-                      <td>员工工龄</td>
-                    </tr>
-                    <tr>
-                      <td >员工科室</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="span4">
               </div>
-              <div class="span6">
+              <div class="span4">
                 <table class="table table-bordered table-invoice">
                   <tbody>
+
                     <tr>
-                    <tr>
-                      <td class="width30">当前操作员工ID:</td>
-                      <td class="width70"><strong>123456</strong></td>
-                    </tr>
+                      <centre>
                     <tr>
                       <td>当前操作员工账号：</td>
                       <td>
@@ -73,6 +52,7 @@
                       </strong>
                       </td>
                     </tr>
+                    <centre>
                     <tr>
                       <td>操作日期</td>
                       <td><strong>

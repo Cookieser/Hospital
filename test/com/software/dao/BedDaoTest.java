@@ -21,6 +21,7 @@ public class BedDaoTest {
         bedEntity.setState(1);
         bedEntity.setRoomID(5);
         bedEntity.setRoomClean("2022/6/8");
+        bedEntity.setPatientID(1);
 
 
         int count = bedDao.addWork(bedEntity);
@@ -40,6 +41,7 @@ public class BedDaoTest {
         bedEntity.setState(1);
         bedEntity.setBedNumber(66666);
         bedEntity.setDelmark(1);
+        bedEntity.setPatientID(1);
 
         int count=bedDao.updateWork(bedEntity);
         if(count >0){

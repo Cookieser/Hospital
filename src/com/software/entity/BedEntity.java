@@ -8,6 +8,7 @@ public class BedEntity {
     private String roomClean;
     private Integer delmark;
     private String remarks;
+    private Integer PatientID;
 
     public Integer getID() {
         return ID;
@@ -64,4 +65,18 @@ public class BedEntity {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+    public Integer getPatientID() {
+        return PatientID;
+    }
+
+    public void setPatientID(Integer patientID) {
+        PatientID = patientID;
+    }
+
+
+
+
+
+
 }

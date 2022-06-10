@@ -8,10 +8,32 @@
   <component name="ChangeListManager">
     <list default="true" id="df42e12e-51aa-4eb0-82b8-7717ea6a22a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/UpdateBed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/UpdateBed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/dao/BedDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/dao/BedDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/entity/BedEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/entity/BedEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/servlet/AddBedServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/servlet/AddBedServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/servlet/DeleteBedServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/servlet/DeleteBedServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/servlet/UpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/WEB-INF/classes/com/software/servlet/UpdateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/addbed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/addbed.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/getdoctor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/getdoctor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/UpdateQuestion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/UpdateQuestion.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javaweb_war_exploded/index2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/BedDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/dao/BedDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/entity/BedEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/entity/BedEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/servlet/AddBedServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/servlet/AddBedServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/servlet/DeleteBedServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/servlet/DeleteBedServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaweb/com/software/servlet/UpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaweb/com/software/servlet/UpdateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/BedDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/javaweb/com/software/dao/BedDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/dao/BedDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/entity/BedEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/servlet/AddBedServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/servlet/DeleteBedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/software/servlet/DeleteBedServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/software/servlet/UpdateServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/software/dao/BedDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/software/dao/BedDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/UpdateBed.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addbed.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/getdoctor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/getdoctor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/getquestion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/getquestion.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index2.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/software/servlet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -91,14 +113,30 @@
       <recent name="com.software.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\32442\Desktop\javaweb\src\com\software\servlet" />
       <recent name="C:\Users\32442\Desktop\javaweb\web" />
-      <recent name="C:\Users\32442\Downloads\hospital_server-master\test\com\software\dao" />
-      <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\dao" />
-      <recent name="C:\Users\32442\Downloads\hospital_server-master\src\com\software\entity" />
+      <recent name="C:\Users\32442\Desktop\javaweb\web\img" />
+      <recent name="C:\Users\32442\Desktop\javaweb\src\com\software\servlet" />
+      <recent name="C:\Users\32442\Desktop\javaweb\src\com\software\dao" />
+      <recent name="C:\Users\32442\Desktop\javaweb\src\com\software\entity" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.52">
+    <configuration name="BedDaoTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.software.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.BedDaoTest" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BedDaoTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
@@ -115,6 +153,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BedDaoTest.testFindAllWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.software.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.software.dao.BedDaoTest" />
+      <option name="METHOD_NAME" value="testFindAllWork" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BedDaoTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
@@ -126,38 +180,6 @@
       <option name="PACKAGE_NAME" value="com.software.dao" />
       <option name="MAIN_CLASS_NAME" value="com.software.dao.BedDaoTest" />
       <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DoctorDaoTest.testAddWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.DoctorDaoTest" />
-      <option name="METHOD_NAME" value="testAddWork" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DoctorDaoTest.testFindWorkByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.software.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.software.dao.DoctorDaoTest" />
-      <option name="METHOD_NAME" value="testFindWorkByID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,20 +273,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DoctorDaoTest.testFindWorkByID" />
-      <item itemvalue="JUnit.DoctorDaoTest.testAddWork" />
       <item itemvalue="JUnit.BedDaoTest.testUpdate" />
       <item itemvalue="JUnit.BedDaoTest.testDelete" />
       <item itemvalue="JUnit.QuestionTest.testDelete" />
+      <item itemvalue="JUnit.BedDaoTest.testAdd" />
+      <item itemvalue="JUnit.BedDaoTest.testFindAllWork" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuestionTest.testDelete" />
-        <item itemvalue="JUnit.BedDaoTest.testUpdate" />
+        <item itemvalue="JUnit.BedDaoTest.testFindAllWork" />
         <item itemvalue="JUnit.BedDaoTest.testDelete" />
-        <item itemvalue="JUnit.DoctorDaoTest.testAddWork" />
-        <item itemvalue="JUnit.DoctorDaoTest.testFindWorkByID" />
+        <item itemvalue="JUnit.BedDaoTest.testUpdate" />
+        <item itemvalue="JUnit.BedDaoTest.testAdd" />
+        <item itemvalue="JUnit.QuestionTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +351,10 @@
       <workItem from="1654777824199" duration="6396000" />
       <workItem from="1654823307011" duration="1207000" />
       <workItem from="1654824537708" duration="426000" />
-      <workItem from="1654825361166" duration="2057000" />
+      <workItem from="1654825361166" duration="2205000" />
+      <workItem from="1654845859457" duration="2553000" />
+      <workItem from="1654848698492" duration="1277000" />
+      <workItem from="1654849998322" duration="146000" />
     </task>
     <servers />
   </component>
@@ -353,76 +378,76 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="271" width="439" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1654771740051" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654777642647">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654849633434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2388" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1654693469755" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1654777642647" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1654849633434" />
     <state x="570" y="168" key="FileChooserDialogImpl" timestamp="1654777328962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257436076" />
     <state x="570" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654777328962" />
-    <state width="1493" height="490" key="GridCell.Tab.0.bottom" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.0.bottom" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
     <state width="1397" height="76" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1654693407672" />
-    <state width="1493" height="490" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1493" height="490" key="GridCell.Tab.0.center" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.0.center" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
     <state width="1397" height="76" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1654693407672" />
-    <state width="1493" height="490" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1493" height="490" key="GridCell.Tab.0.left" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.0.left" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
     <state width="1397" height="76" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1654693407671" />
-    <state width="1493" height="490" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1493" height="490" key="GridCell.Tab.0.right" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.0.right" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
     <state width="1397" height="76" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1654693407672" />
-    <state width="1493" height="490" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1024" height="521" key="GridCell.Tab.1.bottom" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.1.bottom" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1024" height="521" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1024" height="521" key="GridCell.Tab.1.center" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.1.center" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1024" height="521" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1024" height="521" key="GridCell.Tab.1.left" timestamp="1654824522826">
+    <state width="1024" height="310" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.1.left" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1024" height="521" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1654824522826" />
-    <state width="1024" height="521" key="GridCell.Tab.1.right" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.1.right" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1654257540483" />
-    <state width="1024" height="521" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1024" height="521" key="GridCell.Tab.2.bottom" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.2.bottom" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="521" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1024" height="521" key="GridCell.Tab.2.center" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.2.center" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="521" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1024" height="521" key="GridCell.Tab.2.left" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.2.left" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="521" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
-    <state width="1024" height="521" key="GridCell.Tab.2.right" timestamp="1654824522827">
+    <state width="1024" height="310" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
+    <state width="1024" height="310" key="GridCell.Tab.2.right" timestamp="1654850145178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="521" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1654824522827" />
+    <state width="1024" height="310" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1654850145178" />
     <state x="540" y="135" key="RollbackChangesDialog" timestamp="1654771856755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

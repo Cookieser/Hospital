@@ -24,6 +24,8 @@ public class UpdateServlet extends HttpServlet {
         String  whetherInuse =request.getParameter("whetherInuse");
         String Bed_number = apartment+district+roomID+bedID;
         String Room_clean= request.getParameter("Room_clean");
+        String PatientID=request.getParameter("PatientID");
+        bedEntity.setPatientID(Integer.parseInt(PatientID));
         bedEntity.setID(Integer.parseInt(ID));
         bedEntity.setBedNumber(Integer.parseInt(Bed_number));
         bedEntity.setState(Integer.parseInt(whetherInuse));

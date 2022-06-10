@@ -1,3 +1,7 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="com.software.utils.DBUtils" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +33,7 @@
     <div id="content-header">
         <h1>床位增添</h1>
     </div>
-    <form id="loginform" class="form-vertical" action="${pageContext.request.contextPath}/updateBed" method="get">
+    <form method="get" class="form-horizontal"  action="${pageContext.request.contextPath}/updateBed" >
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span7">
@@ -43,10 +47,10 @@
                                 <label class="control-label">床位ID :</label>
                                 <div class="controls">
                                     <input type="text"  class="span11" name="ID">
-
                                 </div>
                             <div class="control-group">
-                                <label class="control-label">公寓楼号：</label>
+
+                         <label class="control-label">公寓楼号：</label>
 
                                 <div class="controls">
                                     <select name="apartment">
@@ -56,10 +60,11 @@
                                         <option>4</option>
                                         <option>5</option>
                                         <option>6</option>
-                                    </select></div>
-                            </div>
+                                    </select>
+                                </div>
+
                             <div class="control-group">
-                                <label class="control-label">楼宇区号：</label>
+                          <label class="control-label">楼宇区号：</label>
                                 <div class="controls">
                                     <select name="district">
                                         <option>1</option>
@@ -68,6 +73,39 @@
                                         <option>4</option>
                                     </select>
                                 </div>
+
+
+                                <div class="control-group">
+                                    <label  class="control-label">患者ID :</label>
+                                    <div class="controls">
+                                        <select name="PatientID">
+
+                                            <%
+                                                try {
+
+                                                    Connection connection = null;
+                                                    connection = DBUtils.getConnection();
+                                                    Statement stmt = null;
+                                                    ResultSet rs = null;
+                                                    String sql = "select User_ID,patient_name from patient where DelMark=1"; //查询语句
+                                                    stmt = connection.createStatement();
+                                                    rs = stmt.executeQuery(sql);
+
+                                                    while (rs.next()) {
+                                                        int id= rs.getInt("User_ID");
+                                                        String name = rs.getString("patient_name");
+
+                                            %>
+                                            <option value="<%=id%>"><%=id%>-<%=name%></option>
+                                            <%
+                                                    }
+                                                } catch (Exception e) {
+                                                    e.printStackTrace();
+                                                    System.out.println("数据库连接失败");
+                                                }
+                                            %>
+                                        </select>
+                                    </div>
                                 <div class="control-group">
                                     <label class="control-label">区域房间号：</label>
                                     <div class="controls">
@@ -83,6 +121,7 @@
                                             <option>09</option>
                                         </select>
                                     </div>
+                                </div>
                                     <div class="control-group">
                                         <label class="control-label">房间床位号：</label>
                                         <div class="controls">
@@ -98,20 +137,19 @@
                                                 <option>9</option>
                                             </select>
                                         </div>
+                                    </div>
                                         <div class="control-group">
-                                            <label class="control-label">房间使用情况(1-空闲，0-未使用)：</label>
+                                            <label class="control-label">房间使用情况：</label>
 
                                             <div class="controls">
 
                                                 <select name="whetherInuse">
-
-
-                                                    <option>1</option>
-                                                    <option>0</option>
+                                                    <option value="1">空闲</option>
+                                                    <option value="0">未使用</option>
                                                 </select>
                                             </div>
-                                            <br />
-                                            <br />
+                                        </div>
+
                                             <div class="control-group">
                                                 <label class="control-label">最近房间打扫时间 :</label>
                                                 <div class="controls">
