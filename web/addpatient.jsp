@@ -1,3 +1,7 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="com.software.utils.DBUtils" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,13 +66,33 @@
                   <label class="control-label">主治医生编号 :</label>
                   <div class="controls">
                     <select name="DID">
-                      <option value="1">王大普</option>
-                      <option value="2">陆晨陈</option>
-                      <option value="3">齐豪</option>
-                      <option value="4">陈某</option>
-                      <option value="5">王玉普</option>
-                      <option value="6">卓英</option>
-                      <option value="7">刘衡</option>
+                      <%
+                        try {
+
+                          Connection connection = null;
+                          connection = DBUtils.getConnection();
+                          Statement stmt = null;
+                          ResultSet rs = null;
+                          String sql = "SELECT principal,`name` FROM `doctor_chart` WHERE DelMark=1"; //查询语句
+                          stmt = connection.createStatement();
+                          rs = stmt.executeQuery(sql);
+
+                          while (rs.next()) {
+                            int id= rs.getInt("principal");
+                            String name = rs.getString("name");
+
+
+
+                      %>
+                      <option value="<%=id%>"><%=id%>-<%=name%></option>
+
+                      <%
+                          }
+                        } catch (Exception e) {
+                          e.printStackTrace();
+                          System.out.println("数据库连接失败");
+                        }
+                      %>
                     </select>
                   </div>
                 </div>

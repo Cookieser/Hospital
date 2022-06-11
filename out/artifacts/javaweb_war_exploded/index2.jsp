@@ -32,10 +32,10 @@
         <div class="widget-content">
             <div class="error_ex">
                 <li class="span5"> <a> <img src="${pageContext.request.contextPath}/img/gallery/imgbox2.jpg" alt="" > </a>
-                    <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox2.jpg"><i class="icon-search"></i></a> </div>
+                    <div class="actions">  <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox2.jpg"><i class="icon-search"></i></a> </div>
                 </li>
                 <li class="span5"> <a> <img src="${pageContext.request.contextPath}/img/gallery/imgbox3.jpg" alt="" > </a>
-                    <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+                    <div class="actions">  <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
                 </li>
             </div>
         </div>
@@ -57,8 +57,8 @@
               <li class="bg_lo"> <a href="addrareuse.jsp"> <i class="icon-home"></i>设备使用注册 </a> </li>
               <li class="bg_ls"> <a href="getpatientinfo.jsp"> <i class="icon-lock"></i> 查询用户</a> </li>
               <li class="bg_lb"> <a href="success.jsp"> <i class="icon-envelope-alt"></i>成功 </a> </li>
-              <li class="bg_lg"> <a href="#"> <i class="icon-dashboard"></i> icon-Dashboard </a> </li>
-              <li class="bg_lo"> <a href="#"> <i class="icon-facetime-video"></i>icon-facetime-video </a> </li>
+              <li class="bg_lg"> <a href="#"> <i class="icon-dashboard"></i>  </a> </li>
+              <li class="bg_lo"> <a href="#"> <i class="icon-facetime-video"></i> </a> </li>
             </ul>
     </div>
 

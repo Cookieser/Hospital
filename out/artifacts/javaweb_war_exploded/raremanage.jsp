@@ -42,7 +42,7 @@
                   <th>设备名称</th>
                   <th>设备类型</th>
                   <th>是否正在被使用</th>
-                  <th>房间编号</th>
+                  <th>房间ID</th>
                   <th>操作</th>
                 </tr>
               </thead>
