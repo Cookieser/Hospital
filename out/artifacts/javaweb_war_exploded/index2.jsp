@@ -19,37 +19,28 @@
 	
 	
 	<div class="widget-title">
-    <div class="row-fluid">
-      <div class="span12">
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
-            <h5>你好，admin</h5>
-          </div>
-          <div class="widget-content">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
+                        <h5>你好，admin</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget-content">
             <div class="error_ex">
-               <li class="span6"> <a> <img src="${pageContext.request.contextPath}/img/gallery/imgbox2.jpg" alt="" > </a>
-                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox2.jpg"><i class="icon-search"></i></a> </div>
-              </li>
-                <li class="span6"> <a> <img src="${pageContext.request.contextPath}/img/gallery/imgbox3.jpg" alt="" > </a>
-                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
-              </li>
-          </div>
+                <li class="span5"> <a> <img src="${pageContext.request.contextPath}/img/gallery/imgbox2.jpg" alt="" > </a>
+                    <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox2.jpg"><i class="icon-search"></i></a> </div>
+                </li>
+                <li class="span5"> <a> <img src="${pageContext.request.contextPath}/img/gallery/imgbox3.jpg" alt="" > </a>
+                    <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="${pageContext.request.contextPath}/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+                </li>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-   
-   <div class="widget-title">
-    <div class="row-fluid">
-      <div class="span12">
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
-                <h3>天伦颐养中心首页</h3>
-              <a class="btn btn-warning btn-big"  href="${pageContext.request.contextPath}/getbed.jsp">Get the bed</a> </div>
-        </div>
-      </div>
-    </div>
-   </div>
+
+
 
    <div class="widget-box">
    	         <div class="widget-title"> <span class="icon"> <i class="icon-globe"></i> </span>
@@ -59,18 +50,18 @@
               <li class="bg_lb"> <a href="addquestion.jsp"> <i class="icon-book"></i> 提出问题 </a> </li>
               <li class="bg_lg"> <a href="addanswer.jsp"> <i class="icon-tasks"></i> 问题回答</a> </li>
               <li class="bg_ly"> <a href="adddoctor.jsp"> <i class="icon-calendar"></i>  医生注册 </a> </li>
-              <li class="bg_lo"> <a href="#"> <i class="icon-user"></i> icon-client</a> </li>
-              <li class="bg_ls"> <a href="#"> <i class="icon-upload-alt"></i> icon-database </a> </li>
-              <li class="bg_lb"> <a href="#"> <i class="icon-download"></i> icon-download </a> </li>
-              <li class="bg_lg"> <a href="#"> <i class="icon-bar-chart"></i> icon-graph </a> </li>
-              <li class="bg_lo"> <a href="#"> <i class="icon-home"></i>icon-home </a> </li>
-              <li class="bg_ls"> <a href="#"> <i class="icon-lock"></i> icon-lock </a> </li>
-              <li class="bg_lb"> <a href="#"> <i class="icon-envelope-alt"></i>icon-mail </a> </li>
+              <li class="bg_lo"> <a href="addaccommodation.jsp"> <i class="icon-user"></i>  办理入住</a> </li>
+              <li class="bg_ls"> <a href="addpatient.jsp"> <i class="icon-upload-alt"></i>  添加用户</a> </li>
+              <li class="bg_lb"> <a href="addbed.jsp"> <i class="icon-download"></i> 床位添加 </a> </li>
+              <li class="bg_lg"> <a href="addraremanage.jsp"> <i class="icon-bar-chart"></i>添加设备 </a> </li>
+              <li class="bg_lo"> <a href="addrareuse.jsp"> <i class="icon-home"></i>设备使用注册 </a> </li>
+              <li class="bg_ls"> <a href="getpatientinfo.jsp"> <i class="icon-lock"></i> 查询用户</a> </li>
+              <li class="bg_lb"> <a href="success.jsp"> <i class="icon-envelope-alt"></i>成功 </a> </li>
               <li class="bg_lg"> <a href="#"> <i class="icon-dashboard"></i> icon-Dashboard </a> </li>
               <li class="bg_lo"> <a href="#"> <i class="icon-facetime-video"></i>icon-facetime-video </a> </li>
             </ul>
     </div>
-    
+
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
             <h5>To Do list</h5>
@@ -100,9 +91,9 @@
             </ul>
           </div>
         </div>
-        
-        
-      
+
+
+
 
 </div>
         

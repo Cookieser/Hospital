@@ -65,7 +65,7 @@
                 </a>
                 <ul>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/addpatient.jsp"><i class="icon icon-caret-right"></i>添加用户</a></li>
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/gotolive.jsp"><i class="icon icon-caret-right"></i>办理入住</a></li>
+                    <li><a class="menu_a" link="${pageContext.request.contextPath}/addaccommodation.jsp"><i class="icon icon-caret-right"></i>办理入住</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/PServlet"><i class="icon icon-caret-right"></i>查询患者信息</a></li>
                     <li><a class="menu_a" link="${pageContext.request.contextPath}/getaccommodation.jsp"><i class="icon icon-caret-right"></i>查询患者入住信息</a></li>
                 </ul>

@@ -163,7 +163,7 @@
               <label  class="control-label">房间使用情况：</label>
              <div class="controls">
                 <select name="whetherInuse">
-                  <option value="1">空闲</option>
+                  <option value="1">使用中</option>
                   <option value="0">未使用</option>
                 </select>
               </div>

@@ -50,9 +50,9 @@
                                 </script>
 
                             <div class="control-group">
-                                <label class="control-label">题目类型：</label>
+                                <label class="control-label" >题目类型：</label>
                                 <div class="controls">
-                                    <select name="modelName">
+                                    <select name="modelName" readonly="readonly">
                                         <option value="1">养老</option>
                                         <option value="2">疗养</option>
                                         <option value="3">轻型残疾</option>

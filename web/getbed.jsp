@@ -58,6 +58,7 @@
                   status= rs.getInt("State");
                   if(status==0) statusPrint="未使用";else statusPrint="使用中";
                   int id=rs.getInt("ID");
+                  int idRoom=rs.getInt("Room_ID");
               %>
               <tr>
                 <td><%=id%></td>
@@ -65,7 +66,7 @@
                 <td><%=statusPrint%></td>
                 <td><%=rs.getInt("Room_ID")%></td>
                 <td><%=rs.getString("Room_Clean")%></td>
-                <td><a href='${pageContext.request.contextPath}/UpdateBed.jsp' onclick="storeQuestion(<%=id%>)">修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
+                <td><a href='${pageContext.request.contextPath}/UpdateBed.jsp' onclick="storeQuestion(<%=id%>,<%=idRoom%>)">修改</a>|<a href="javaScript:delWorkById(<%=id%>)">删除</td>
               </tr>
                 <%
                 }
@@ -92,8 +93,9 @@
   }
 </script>
 <script language="javascript">
-  function storeQuestion(bedID) {
+  function storeQuestion(bedID,roomID) {
     window.localStorage.setItem("bedID", bedID);
+    window.localStorage.setItem("roomID", roomID);
   }
 </script>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
