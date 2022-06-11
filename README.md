@@ -1,5 +1,13 @@
 # Javaweb项目
 
+## 使用技术架构
+
+* Javaweb
+* Tomcat
+* jsp
+* Servlet
+* JavaScript
+
 ## 使用
 
 注意：
@@ -70,11 +78,11 @@ git push -u https://github.com/Cookieser/hospital_server.git master//上传commi
 
 ## 任务完成
 
-- [ ] 主页修改
+- [x] 主页修改
 - [x] 添加患者
-- [ ] 办理入驻
+- [x] 办理入驻
 - [x] 查询患者信息
-- [ ] 查询入驻信息
+- [x] 查询入驻信息
 - [x] 问题表查询
 - [x] 答案表查询
 - [x] 添加问题
@@ -83,8 +91,8 @@ git push -u https://github.com/Cookieser/hospital_server.git master//上传commi
 - [x] 床位添加
 - [x] 员工查询
 - [x] 员工添加
-- [ ] 设备使用
-- [ ] 设备管理
+- [x] 设备使用
+- [x] 设备管理
 
 **注意：数据库中bed表发生更改**
 
