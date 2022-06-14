@@ -1,16 +1,18 @@
 # Javaweb项目
 
+## 说明
+
+根据2022年生产实习课程基础内容加以编写
+
 ## 使用技术
 
-* Javaweb
+* Java
 * Tomcat
 * jsp
 * Servlet
 * JavaScript
 
-## 说明
 
-根据2022年生产实习课程基础内容加以编写
 
 ## 功能
 
